@@ -69,6 +69,8 @@ public class Navigator : MonoBehaviour
 	public float maxRadiusCheck = 1f;
 	[Tooltip("Layer which to check for Waypoints")]
 	public LayerMask WaypointLayer;
+	[Tooltip("Layers that can block waypoint paths")]
+	public LayerMask CollisionLayer;
 	[Tooltip("Layers which can block path finding")]
 	public LayerMask NavigationCollisionLayer;
 
@@ -166,12 +168,12 @@ public class Navigator : MonoBehaviour
 
 			if (useSphereCast)
 			{
-				if (!Physics.SphereCast(new Ray(waypoint.position, direction), waypoint.radius, distance, NavigationCollisionLayer))
+				if (!Physics.SphereCast(new Ray(waypoint.position, direction), waypoint.radius, distance, CollisionLayer |= NavigationCollisionLayer))
 				{
 					waypoint.neighbours.Add(GetNeighbourContainer(neighbourWaypoint, distance));
 				}
 			}
-			else if (!Physics.Raycast(waypoint.position, direction, distance, NavigationCollisionLayer))
+			else if (!Physics.Raycast(waypoint.position, direction, distance, CollisionLayer |= NavigationCollisionLayer))
 			{
 				waypoint.neighbours.Add(GetNeighbourContainer(neighbourWaypoint, distance));
 			}
@@ -205,12 +207,12 @@ public class Navigator : MonoBehaviour
 
 			if (useSphereCast)
 			{
-				if (!Physics.SphereCast(new Ray(waypoint.position, direction), waypoint.radius, distance, NavigationCollisionLayer))
+				if (!Physics.SphereCast(new Ray(waypoint.position, direction), waypoint.radius, distance, CollisionLayer |= NavigationCollisionLayer))
 				{
 					waypoint.neighbours.Add(GetNeighbourContainer(neighbourWaypoint, distance));
 				}
 			}
-			else if (!Physics.Raycast(waypoint.transform.position, direction, distance, NavigationCollisionLayer))
+			else if (!Physics.Raycast(waypoint.transform.position, direction, distance, CollisionLayer |= NavigationCollisionLayer))
 			{
 				waypoint.neighbours.Add(GetNeighbourContainer(neighbourWaypoint, distance));
 			}
@@ -258,6 +260,7 @@ public class Navigator : MonoBehaviour
 
 	public void ClearNeighbours(Waypoint waypoint)
 	{
+		if (!waypoint) return;
 		foreach(var neighbour in waypoint.neighbours)
 		{
 			neighbourPool.Push(neighbour);
@@ -506,12 +509,12 @@ public class Navigator : MonoBehaviour
 
 			if (useSphereCast)
 			{
-				if (!Physics.SphereCast(new Ray(waypoint.transform.position, direction), waypoint.radius, distance, NavigationCollisionLayer))
+				if (!Physics.SphereCast(new Ray(waypoint.transform.position, direction), waypoint.radius, distance, CollisionLayer |= NavigationCollisionLayer))
 				{
 					waypoint.neighbours.Add(new NeighbourInfo(neighbourWaypoint, distance));
 				}
 			}
-			else if (!Physics.Raycast(waypoint.transform.position, direction, distance, NavigationCollisionLayer))
+			else if (!Physics.Raycast(waypoint.transform.position, direction, distance, CollisionLayer |= NavigationCollisionLayer))
 			{
 				waypoint.neighbours.Add(new NeighbourInfo(neighbourWaypoint, distance));
 			}
@@ -529,6 +532,7 @@ public class Navigator : MonoBehaviour
 
 		foreach(var item in allWaypoints)
 		{
+			if (!item) continue;
 			ClearNeighbours(item);
 			item.position = Vector3.zero;
 		}

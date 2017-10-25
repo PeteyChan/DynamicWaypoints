@@ -50,7 +50,9 @@ public class TestPathfinder : MonoBehaviour
 
 		float force = Mathf.Min((goal - transform.position).magnitude, 2f)/2f * speed;
 
-		rb.velocity = (info.NextPosition - transform.position).normalized*force;
+		var	direction = info.Path[1] - transform.position;
+
+		rb.velocity = direction.normalized*force;
 	}
 
 	void OnDisable()

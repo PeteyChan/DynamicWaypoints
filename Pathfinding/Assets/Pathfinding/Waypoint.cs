@@ -236,7 +236,7 @@ public class Waypoint : MonoBehaviour
 
 		//Gizmos.DrawWireCube(transform.position, new Vector3(nav.maxRadiusCheck, nav.maxRadiusCheck, 5f));
 
-		if (Navigator.Instance.drawGizmos)
+		if (Navigator.Instance && Navigator.Instance.drawGizmos)
 		{
 			Gizmos.color = Color.Lerp(nav.connectionColor*nav.gizmoStrength, nav.penaltyColor*nav.gizmoStrength, penalty/10f);	
 		

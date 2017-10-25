@@ -53,12 +53,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxWaypointUpdatesPerFrame: 10
   MaxPathingUpdatesPerFrame: 5
-  maxPathLength: 7
+  maxPathLength: 10
   useSphereCast: 0
   maxRadiusCheck: 1
   WaypointLayer:
     serializedVersion: 2
     m_Bits: 256
+  CollisionLayer:
+    serializedVersion: 2
+    m_Bits: 0
   NavigationCollisionLayer:
     serializedVersion: 2
     m_Bits: 512

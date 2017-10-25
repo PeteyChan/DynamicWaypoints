@@ -59,17 +59,7 @@ public class DynamicNavigationCollider : MonoBehaviour
 
 			var colliders = Navigator.Instance.colliders;
 
-			switch (BoundsType)
-			{
-			case InfluenceType.Sphere:
-				count = Physics.OverlapSphereNonAlloc(position, InfluenceRange, colliders, Navigator.Instance.WaypointLayer);
-				break;
-			case InfluenceType.Box:
-				count = Physics.OverlapBoxNonAlloc(position, InfluenceDimensions/2f, colliders, transform.rotation, Navigator.Instance.WaypointLayer);
-				break;
-			default:
-				break;					
-			}
+			count = Physics.OverlapSphereNonAlloc(position, InfluenceRange, colliders, Navigator.Instance.WaypointLayer);
 
 			for (int i = 0; i < count; ++ i)
 			{
