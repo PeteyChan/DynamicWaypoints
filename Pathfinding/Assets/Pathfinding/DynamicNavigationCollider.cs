@@ -32,6 +32,7 @@ public class DynamicNavigationCollider : MonoBehaviour
 	{
 		position = transform.position;
 		navigatorColliders.Add(this);
+		ForceUpdate();
 	}
 
 	void OnDisable()
@@ -41,9 +42,17 @@ public class DynamicNavigationCollider : MonoBehaviour
 
 	public List<Waypoint> InsideWaypoints = new List<Waypoint>();
 
+	bool forceUpdate;
+
+	[ContextMenu("ForceUpdate")]
+	public void ForceUpdate()
+	{
+		forceUpdate = true;
+	}
+
 	void UpdateCollider()
 	{
-		if (position != transform.position)
+		if (position != transform.position || forceUpdate)
 		{
 			position = transform.position;
 			int count = 0;
@@ -75,7 +84,7 @@ public class DynamicNavigationCollider : MonoBehaviour
 			{
 				var direction = position - waypoint.position;
 				RaycastHit info;
-				if (Physics.Raycast(waypoint.position, direction, out info, direction.magnitude , Navigator.Instance.NavigationCollisionLayer) && info.distance > .5f)
+				if (Physics.Raycast(waypoint.position, direction, out info, direction.magnitude , Navigator.Instance.NavigationCollisionLayer) && info.distance > waypoint.radius)
 				{
 					waypoint.gameObject.SetActive(true);
 					Navigator.Instance.QueueNeighbourUpdate(waypoint);

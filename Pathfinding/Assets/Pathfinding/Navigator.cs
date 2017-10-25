@@ -100,7 +100,6 @@ public class Navigator : MonoBehaviour
 	HashSet<Waypoint> vistedNodes = new HashSet<Waypoint>();
 	HashSet<Waypoint> ignoreNodes = new HashSet<Waypoint>();
 	List<Waypoint> searchNodes = new List<Waypoint>();
-	Stack<Waypoint> NodeStack = new Stack<Waypoint>();
 
 	void FixedUpdate()
 	{
@@ -332,7 +331,7 @@ public class Navigator : MonoBehaviour
 			return;
 		}
 
-		Waypoint endNode = GetClosestWaypoint(goal);	// assign endnode if one available, doesn't matter if there isn't one
+		Waypoint endNode = GetClosestWaypoint(goal);
 
 		if (endNode != null)
 		{
@@ -434,17 +433,20 @@ public class Navigator : MonoBehaviour
 
 		currentNode = closestNode;
 
+		if ((goal - closestNode.position).magnitude > info.minDistanceToWaypoint)
+		{
+			path.Add(goal);
+		}
+
 		while (currentNode.previous != null)
 		{
-			NodeStack.Push(currentNode);
+			path.Add(currentNode.position);
 			currentNode = currentNode.previous;
 		}
-		while (NodeStack.Count > 0)
+		if ((currentNode.position - start).magnitude > info.minDistanceToWaypoint)
 		{
-			path.Add(NodeStack.Pop().position);
+			path.Add(currentNode.position);
 		}
-		if (goal != closestNode.position)
-			path.Add(goal);
 
 		info.NodeTraversalCount = loopcount;
 		return;
@@ -548,39 +550,15 @@ public class NavigatorInfo
 
 	public float minDistanceToWaypoint = .1f;
 	public float MaxPathingDistance = 20f;
+	[SerializeField]
 	public List<Vector3> Path = new List<Vector3>();
-
 	public int NodeTraversalCount;
 
-	public Vector3 NextWaypoint
+	public Vector3 NextPosition(Vector3 currentPosition)
 	{
-		get
-		{
-			minDistanceToWaypoint = Mathf.Max(.05f, minDistanceToWaypoint);
-
-			for (int i = 0; i < Path.Count-1; ++i)
-			{
-				if ((Path[i+1] - Path[i]).magnitude < minDistanceToWaypoint)
-				{
-					continue;
-				}
-				return Path[i+1];
-			}
-			return endPosition;
-		}
-	}
-
-	public bool AtDestination
-	{
-		get 
-		{
-			return (NextWaypoint - endPosition).magnitude < minDistanceToWaypoint;
-		}
-	}
-
-	public Vector3 DirectionToNextWaypoint
-	{
-		get {return AtDestination ? (NextWaypoint - startPosition).normalized : Vector3.zero;}
+		if (Path.Count > 2)
+			return Path[Path.Count - 2];
+		return endPosition;
 	}
 
 	static int newHash = 0;

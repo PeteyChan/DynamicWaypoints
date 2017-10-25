@@ -48,24 +48,9 @@ public class TestPathfinder : MonoBehaviour
 		info.startPosition = transform.position;
 		info.endPosition = goal;
 
-		foreach (var item in info.Path)
-		{
-			var direction = item - info.startPosition;
-			if (direction.magnitude < info.minDistanceToWaypoint)
-				continue;
+		float force = Mathf.Min((goal - transform.position).magnitude, 2f)/2f * speed;
 
-			float force = Mathf.Clamp01(direction.magnitude);
-
-			rb.velocity = direction.normalized*force* speed;
-			break;
-		}
-
-		//rb.velocity = transform.forward* Input.GetAxis("Vertical")* speed;
-
-		if (!info.AtDestination)
-		{
-			//rb.velocity = info.DirectionToNextWaypoint * speed;
-		}
+		rb.velocity = (info.NextPosition(transform.position) - transform.position).normalized*force;
 	}
 
 	void OnDisable()
