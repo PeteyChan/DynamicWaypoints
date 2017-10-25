@@ -448,6 +448,7 @@ public class Navigator : MonoBehaviour
 			path.Add(currentNode.position);
 		}
 
+		path.Reverse();
 		info.NodeTraversalCount = loopcount;
 		return;
 	}
@@ -554,11 +555,14 @@ public class NavigatorInfo
 	public List<Vector3> Path = new List<Vector3>();
 	public int NodeTraversalCount;
 
-	public Vector3 NextPosition(Vector3 currentPosition)
+	public Vector3 NextPosition
 	{
-		if (Path.Count > 2)
-			return Path[Path.Count - 2];
-		return endPosition;
+		get 
+		{
+			if (Path.Count > 2)
+				return Path[1];	
+			return endPosition;
+		}
 	}
 
 	static int newHash = 0;

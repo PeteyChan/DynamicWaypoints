@@ -96,6 +96,7 @@ public class DynamicNavigationCollider : MonoBehaviour
 			}
 
 			InsideWaypoints.RemoveAll(  w => {return w.gameObject.activeSelf;});
+			forceUpdate = false;
 		}
 	}
 
