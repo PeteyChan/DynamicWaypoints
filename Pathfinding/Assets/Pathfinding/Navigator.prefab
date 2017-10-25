@@ -61,7 +61,7 @@ MonoBehaviour:
     m_Bits: 256
   CollisionLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   NavigationCollisionLayer:
     serializedVersion: 2
     m_Bits: 512

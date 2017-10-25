@@ -45,12 +45,11 @@ public class TestPathfinder : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		info.startPosition = transform.position;
-		info.endPosition = goal;
+		info.currentPosition = transform.position;
+		info.goalPosition = goal;
 
 		float force = Mathf.Min((goal - transform.position).magnitude, 2f)/2f * speed;
-
-		var	direction = info.Path[1] - transform.position;
+		var	direction = info.NextPosition - transform.position;
 
 		rb.velocity = direction.normalized*force;
 	}

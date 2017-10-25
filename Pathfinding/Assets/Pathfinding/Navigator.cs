@@ -313,8 +313,8 @@ public class Navigator : MonoBehaviour
 		Waypoint startNode = null;
 
 		var path = info.Path;
-		var start = info.startPosition;
-		var goal = info.endPosition;
+		var start = info.currentPosition;
+		var goal = info.goalPosition;
 		var IgnoreFunction = info.IgnoreWaypointFunction;
 		var GoalFunction = info.GoalWaypointFunction;
 		var PenaltyFunction = info.WaypointPenaltyFunction;
@@ -550,8 +550,8 @@ public class NavigatorInfo
 	public Navigator.CustomIgnoreWaypoint IgnoreWaypointFunction;
 	public Navigator.CustomPenalty WaypointPenaltyFunction;
 
-	public Vector3 startPosition = Vector3.zero;
-	public Vector3 endPosition = Vector3.zero;
+	public Vector3 currentPosition = Vector3.zero;
+	public Vector3 goalPosition = Vector3.zero;
 
 	public float minDistanceToWaypoint = .1f;
 	public float MaxPathingDistance = 20f;
@@ -565,7 +565,7 @@ public class NavigatorInfo
 		{
 			if (Path.Count > 2)
 				return Path[1];	
-			return endPosition;
+			return goalPosition;
 		}
 	}
 

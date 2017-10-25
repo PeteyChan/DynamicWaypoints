@@ -5134,9 +5134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showInfluence: 1
-  InfluenceRange: 9.2
+  InfluenceRange: 10
   InfluenceDimensions: {x: 8, y: 5, z: 5}
-  BoundsType: 0
   InsideWaypoints: []
 --- !u!23 &1592215157
 MeshRenderer:

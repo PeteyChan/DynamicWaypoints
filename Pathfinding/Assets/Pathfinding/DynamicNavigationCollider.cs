@@ -16,9 +16,6 @@ public class DynamicNavigationCollider : MonoBehaviour
 		Sphere, Box
 	}
 
-	[SerializeField]
-	InfluenceType BoundsType = InfluenceType.Sphere;
-
 	Collider col;
 
 	void Awake()
@@ -104,20 +101,7 @@ public class DynamicNavigationCollider : MonoBehaviour
 		if (!showInfluence) return;
 
 		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(transform.position, InfluenceRange);
 
-		switch(BoundsType)
-		{
-		case InfluenceType.Sphere:
-			Gizmos.DrawWireSphere(transform.position, InfluenceRange);
-			break;
-		case InfluenceType.Box:
-			Gizmos.matrix = transform.localToWorldMatrix;
-			Gizmos.DrawWireCube(Vector3.zero, InfluenceDimensions);
-			break;
-		default:
-			break;
-			
-
-		}
 	}
 }
