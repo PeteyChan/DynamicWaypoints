@@ -272,6 +272,7 @@ public class Navigator : MonoBehaviour
 	{
 		foreach(var neighbour in waypoint.neighbours)
 		{
+			if (neighbour == null) continue;
 			neighbour.neighbourWaypoint.RemoveWaypointFromNeighbours(waypoint, neighbourPool);
 			neighbourPool.Push(neighbour);
 
@@ -285,25 +286,45 @@ public class Navigator : MonoBehaviour
 		waypoint.neighbours.Clear();
 	}
 
-	Waypoint GetClosestWaypoint(Vector3 position)
+	Waypoint GetClosestWaypoint(Vector3 start, Vector3 goal)
 	{
-		Waypoint waypoint = null;
-		var count = Physics.OverlapSphereNonAlloc(position, maxPathLength, colliders, WaypointLayer);
-		float closet = Mathf.Infinity;
-		Transform target = null;
-		for (int i = 0; i < count; ++ i)//colliders.Length; ++i)
+		//Find Start Node
+		var shortestDistance = Mathf.Infinity;
+		Collider shortestCollider = null;
+		int count = Physics.OverlapSphereNonAlloc(start, maxPathLength, colliders, WaypointLayer);
+		for (int i = 0; i < count; ++i)
 		{
-			var testCollider = colliders[i].transform;
-			var testDist = (position - testCollider.position).sqrMagnitude;
+			var distanceToStart = (colliders[i].transform.position - start).magnitude;
+			var distanceToGoal = (goal - colliders[i].transform.position).magnitude;
 
-			if (testDist < closet)
+			var distance = .6f*distanceToStart + .4f*distanceToGoal;
+			if (distance < shortestDistance)
 			{
-				closet = testDist;
-				target = testCollider;
+				shortestDistance = distance;
+				shortestCollider = colliders[i];
 			}
 		}
-		if (target) waypoint = target.GetComponent<Waypoint>();
-		return waypoint;
+		if (shortestCollider) return shortestCollider.GetComponent<Waypoint>();
+		return null;
+	}
+
+	Waypoint GetClosestWaypoint(Vector3 goal)
+	{
+		//Find Start Node
+		var shortestDistance = Mathf.Infinity;
+		Collider shortestCollider = null;
+		int count = Physics.OverlapSphereNonAlloc(goal, maxPathLength, colliders, WaypointLayer);
+		for (int i = 0; i < count; ++i)
+		{
+			var distance = (goal - colliders[i].transform.position).magnitude;
+			if (distance < shortestDistance)
+			{
+				shortestDistance = distance;
+				shortestCollider = colliders[i];
+			}
+		}
+		if (shortestCollider) return shortestCollider.GetComponent<Waypoint>();
+		return null;
 	}
 
 	[HideInInspector]
@@ -324,17 +345,18 @@ public class Navigator : MonoBehaviour
 		info.NodeTraversalCount = 0;
 		path.Clear();
 
-		startNode = GetClosestWaypoint(start);	// if no starting waypoint, just head toward gaol
+		startNode = GetClosestWaypoint(start);//, goal);	// if no starting waypoint, just head toward gaol
 
 		//Debug.Log(startNode);
 		if (startNode == null || (start - goal).magnitude < info.minDistanceToWaypoint)
 		{
+			Debug.Log("No Start Node");
 			path.Add(start);
 			path.Add(goal);
 			return;
 		}
 
-		Waypoint endNode = GetClosestWaypoint(goal);
+		Waypoint endNode = GetClosestWaypoint(goal);//, start);
 
 		if (endNode != null)
 		{
@@ -345,7 +367,7 @@ public class Navigator : MonoBehaviour
 				return;
 			}
 		}
-
+//
 		Waypoint currentNode = null;
 		vistedNodes.Clear();	// clear lists
 		ignoreNodes.Clear();
@@ -373,12 +395,12 @@ public class Navigator : MonoBehaviour
 			if (closestNode.distToTarget > currentNode.distToTarget)
 			{
 				closestNode = currentNode;
-			}
 
-			if (currentNode.distTravelled > maxPathingDistance) // early out if exceeding search distance
-			{
-				break;
-			}			
+				if (closestNode.distTravelled > info.MaxPathingDistance)
+				{
+					break;
+				}
+			}
 
 			searchNodes.RemoveAt(searchNodes.Count - 1);
 			vistedNodes.Add(currentNode); 
@@ -563,9 +585,24 @@ public class NavigatorInfo
 	{
 		get 
 		{
-			if (Path.Count > 2)
-				return Path[1];	
+			if (Path.Count >= 2)
+			{
+				if ( (Path[1] - currentPosition).magnitude > (Path[1] - Path[0]).magnitude + minDistanceToWaypoint)
+				{
+					return Path[0];
+				}
+				return Path[1];
+			}
 			return goalPosition;
+		}
+	}
+
+	public Vector3 DirectionToNextPosition
+	{
+		get
+		{
+			var direction = (NextPosition - currentPosition).normalized;
+			return direction;
 		}
 	}
 

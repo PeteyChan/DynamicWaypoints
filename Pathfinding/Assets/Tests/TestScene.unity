@@ -172,8 +172,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1950386727}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 7.8102493
+  position: {x: -1.7000008, y: 0.73, z: 1.77}
 --- !u!1 &17777095
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,8 +246,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 91104926}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 741702689}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 1173333836}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.2799997, y: 0.73, z: -21.23}
 --- !u!1 &31780542
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +328,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 91491730}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1843111283}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 668387057}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 1505385035}
+    distanceToNeighbour: 7.8102493
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 369042155}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: -4.2299995}
 --- !u!1 &81198296
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,8 +410,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 882391087}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1065045232}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 287655925}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 447167089}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 155552611}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: 18.77}
 --- !u!1 &91104923
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,8 +490,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 741702689}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1173333836}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 7.81025
+  position: {x: -1.7000008, y: 0.73, z: -21.23}
 --- !u!1 &91491727
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,8 +570,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 369042155}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1505385035}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 1136914148}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 1447107769}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 1843111283}
+    distanceToNeighbour: 7.8102493
+  position: {x: 13.3, y: 0.73, z: -4.2299995}
 --- !u!1 &136634279
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,8 +650,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 588287692}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 418146287}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 348978742}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 1805460922}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1893488504}
+    distanceToNeighbour: 7.797462
+  position: {x: -16.7, y: 0.73, z: 7.7700005}
 --- !u!1 &142379644
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,8 +724,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 939727461}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 588287692}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 1805460922}
+    distanceToNeighbour: 7.0852237
+  - neighbourWaypoint: {fileID: 7217356}
+    distanceToNeighbour: 7.8102503
+  - neighbourWaypoint: {fileID: 1893488504}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 136634282}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: 7.7700005}
 --- !u!1 &155552608
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,8 +806,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 882391087}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1472172629}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1707154773}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1065045232}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 287655925}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: 18.77}
 --- !u!1 &165528741
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,8 +882,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 2112768834}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 566207919}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 1003332376}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 2090002575}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 811386578}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: -26.23}
 --- !u!1 &201132693
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,8 +964,16 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1003332376}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 811386578}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 2112768834}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: -32.23}
 --- !u!1 &231170457
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,8 +1036,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 2090002575}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1670111833}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 741702689}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 7.81025
+  position: {x: -1.7000008, y: 0.73, z: -32.23}
 --- !u!1 &266751782
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,8 +1110,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 598067495}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1519540985}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1893488504}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 407966001}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 348978742}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 7.8230677
+  position: {x: -11.72, y: 0.73, z: -4.2299995}
 --- !u!1 &287655922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,8 +1188,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1707154773}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 882391087}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 155552611}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 7.81025
+  position: {x: 13.3, y: 0.73, z: 12.77}
 --- !u!1 &314358559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,8 +1262,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 811386578}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 566207919}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1003332376}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1173410227}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 201132696}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 2112768834}
+    distanceToNeighbour: 7.81025
+  position: {x: 13.3, y: 0.73, z: -26.23}
 --- !u!1 &348978739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,8 +1342,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1893488504}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 598067495}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 136634282}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 588287692}
+    distanceToNeighbour: 7.797462
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: 1.77}
 --- !u!1 &353198396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,37 +1418,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
---- !u!1 &354108703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 770798398}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 354108704}
-  m_Layer: 0
-  m_Name: Missing Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &354108704
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 770798398}
-  m_GameObject: {fileID: 354108703}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2008090954}
-  m_Father: {fileID: 1030987123}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1447024800}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1724070091}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 418146287}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1145723603}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1805460922}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: 18.77}
 --- !u!1 &369042152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,8 +1494,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 91491730}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1136914148}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1447107769}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1505385035}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: -4.2299995}
 --- !u!1 &407965998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,8 +1570,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1519540985}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 598067495}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1825445709}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 840704130}
+    distanceToNeighbour: 7.7974615
+  position: {x: -16.7, y: 0.73, z: -9.23}
 --- !u!1 &418146284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,8 +1644,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1805460922}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 136634282}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 353198399}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 588287692}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1447024800}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: 12.77}
 --- !u!1 &447167086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,8 +1720,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1558329723}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 771439721}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1636055234}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.2799997, y: 0.73, z: 24.77}
 --- !u!1 &454203608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,8 +1794,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 596149452}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1843111283}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 7.823069
+  position: {x: 8.3, y: 0.73, z: 7.7700005}
 --- !u!1 &489554088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,6 +1888,129 @@ Transform:
   m_Father: {fileID: 1185851471}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &514528522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 514528528}
+  - component: {fileID: 514528527}
+  - component: {fileID: 514528526}
+  - component: {fileID: 514528525}
+  - component: {fileID: 514528524}
+  - component: {fileID: 514528523}
+  m_Layer: 4
+  m_Name: Pathfinder (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &514528523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514528522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58b409a4a117f84285de7fad28492c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    currentPosition: {x: 0, y: 0, z: 0}
+    goalPosition: {x: 0, y: 0, z: 0}
+    minDistanceToWaypoint: 0.1
+    MaxPathingDistance: 20
+    Path: []
+    NodeTraversalCount: 0
+  speed: 6
+  follow: 1
+  bias: 0.6
+  turnSpeed: 5
+  debugGoal: {fileID: 1489220302}
+  radius: 20
+--- !u!54 &514528524
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514528522}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!23 &514528525
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514528522}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 76db8bd4a725d324d8aa83760ad07d1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &514528526
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514528522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &514528527
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514528522}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &514528528
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514528522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.02, y: 0.31, z: -8.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &545907143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,8 +2073,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 610594320}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1173410227}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1136914148}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 566207919}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: -15.23}
 --- !u!1 &566207916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,8 +2149,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1173410227}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 610594320}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 811386578}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 545907146}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 7.81025
+  position: {x: 13.3, y: 0.73, z: -21.23}
 --- !u!1 &585201444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,8 +2229,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 287655925}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 882391087}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1707154773}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: 12.77}
 --- !u!1 &588287689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,8 +2305,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 136634282}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1805460922}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1893488504}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 418146287}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 348978742}
+    distanceToNeighbour: 7.797462
+  position: {x: -11.72, y: 0.73, z: 7.7700005}
 --- !u!1 &590519694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,8 +2379,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1306936438}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1718330503}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1825445709}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 865916864}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 840704130}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: -21.23}
 --- !u!1 &596149449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,8 +2455,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 454203611}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 1843111283}
+    distanceToNeighbour: 7.823069
+  position: {x: 3.2799997, y: 0.73, z: 7.7700005}
 --- !u!1 &598067492
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,8 +2529,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 407966001}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 348978742}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 1519540985}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1893488504}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: -4.2299995}
 --- !u!1 &610594317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,8 +2605,270 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 545907146}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 566207919}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1136914148}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1173410227}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 7.81025
+  position: {x: 13.3, y: 0.73, z: -15.23}
+--- !u!1 &631136501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 631136507}
+  - component: {fileID: 631136506}
+  - component: {fileID: 631136505}
+  - component: {fileID: 631136504}
+  - component: {fileID: 631136503}
+  - component: {fileID: 631136502}
+  m_Layer: 4
+  m_Name: Pathfinder (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &631136502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631136501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58b409a4a117f84285de7fad28492c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    currentPosition: {x: 0, y: 0, z: 0}
+    goalPosition: {x: 0, y: 0, z: 0}
+    minDistanceToWaypoint: 0.1
+    MaxPathingDistance: 20
+    Path: []
+    NodeTraversalCount: 0
+  speed: 6
+  follow: 1
+  bias: 0.6
+  turnSpeed: 5
+  debugGoal: {fileID: 1489220302}
+  radius: 20
+--- !u!54 &631136503
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631136501}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!23 &631136504
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631136501}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 76db8bd4a725d324d8aa83760ad07d1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &631136505
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631136501}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &631136506
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631136501}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &631136507
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 631136501}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.02, y: 0.31, z: -19.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &657269210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 657269216}
+  - component: {fileID: 657269215}
+  - component: {fileID: 657269214}
+  - component: {fileID: 657269213}
+  - component: {fileID: 657269212}
+  - component: {fileID: 657269211}
+  m_Layer: 4
+  m_Name: Pathfinder (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &657269211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 657269210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58b409a4a117f84285de7fad28492c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    currentPosition: {x: 0, y: 0, z: 0}
+    goalPosition: {x: 0, y: 0, z: 0}
+    minDistanceToWaypoint: 0.1
+    MaxPathingDistance: 20
+    Path: []
+    NodeTraversalCount: 0
+  speed: 6
+  follow: 1
+  bias: 0.6
+  turnSpeed: 5
+  debugGoal: {fileID: 1489220302}
+  radius: 20
+--- !u!54 &657269212
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 657269210}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!23 &657269213
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 657269210}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 76db8bd4a725d324d8aa83760ad07d1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &657269214
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 657269210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &657269215
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 657269210}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &657269216
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 657269210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.02, y: 0.31, z: -11.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &668387054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,8 +2931,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 7.8230686
+  position: {x: 3.2799997, y: 0.73, z: -9.23}
 --- !u!1 &673945613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,8 +3005,114 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1211374163}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1718330503}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 865916864}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1670111833}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: -32.23}
+--- !u!1 &689342211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 689342216}
+  - component: {fileID: 689342215}
+  - component: {fileID: 689342214}
+  - component: {fileID: 689342213}
+  - component: {fileID: 689342212}
+  m_Layer: 9
+  m_Name: NavigationCollider (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &689342212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689342211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c4caed7ae24eb4894c45c890ac8db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfluence: 1
+  InfluenceRange: 10
+  InfluenceDimensions: {x: 8, y: 5, z: 5}
+  InsideWaypoints: []
+--- !u!23 &689342213
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689342211}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &689342214
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689342211}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &689342215
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689342211}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &689342216
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 689342211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.22, y: 0.456, z: -21.68}
+  m_LocalScale: {x: 11.811606, y: 3.8503575, z: 6.549007}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &741702686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,68 +3175,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
---- !u!1001 &770798398
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1030987123}
-    m_Modifications:
-    - target: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1631912313834854, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_Name
-      value: Waypoint (210)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1631912313834854, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 135253796587565370, guid: 3037da18c6d70b345bb7ea3d0f79696e,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114847843529167842, guid: 3037da18c6d70b345bb7ea3d0f79696e,
-        type: 2}
-      propertyPath: _maxPath
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 3037da18c6d70b345bb7ea3d0f79696e, type: 2}
-  m_IsPrefabParent: 0
+  neighbours:
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 91104926}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 231170460}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 2090002575}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1670111833}
+    distanceToNeighbour: 7.81025
+  position: {x: -1.7000008, y: 0.73, z: -26.23}
 --- !u!1 &771439718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,8 +3255,147 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1558329723}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 447167089}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1636055234}
+    distanceToNeighbour: 7.81025
+  position: {x: -1.7000008, y: 0.73, z: 18.77}
+--- !u!1 &801296298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 801296304}
+  - component: {fileID: 801296303}
+  - component: {fileID: 801296302}
+  - component: {fileID: 801296301}
+  - component: {fileID: 801296300}
+  - component: {fileID: 801296299}
+  m_Layer: 4
+  m_Name: Pathfinder (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &801296299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801296298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58b409a4a117f84285de7fad28492c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    currentPosition: {x: 0, y: 0, z: 0}
+    goalPosition: {x: 0, y: 0, z: 0}
+    minDistanceToWaypoint: 0.1
+    MaxPathingDistance: 20
+    Path: []
+    NodeTraversalCount: 0
+  speed: 6
+  follow: 1
+  bias: 0.6
+  turnSpeed: 5
+  debugGoal: {fileID: 1489220302}
+  radius: 20
+--- !u!54 &801296300
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801296298}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!23 &801296301
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801296298}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 76db8bd4a725d324d8aa83760ad07d1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &801296302
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801296298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &801296303
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801296298}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &801296304
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801296298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.02, y: 0.31, z: -22.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811386575
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,8 +3458,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1173410227}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 201132696}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 566207919}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1003332376}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: -26.23}
 --- !u!1 &840704127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2583,8 +3534,16 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1825445709}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1519540985}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 407966001}
+    distanceToNeighbour: 7.7974615
+  position: {x: -11.72, y: 0.73, z: -15.23}
 --- !u!1 &846776288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,8 +3606,118 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 771439721}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.2799997, y: 0.73, z: 12.77}
+--- !u!1 &858216524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 858216529}
+  - component: {fileID: 858216528}
+  - component: {fileID: 858216527}
+  - component: {fileID: 858216526}
+  - component: {fileID: 858216525}
+  m_Layer: 9
+  m_Name: NavigationCollider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &858216525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858216524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c4caed7ae24eb4894c45c890ac8db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfluence: 1
+  InfluenceRange: 10
+  InfluenceDimensions: {x: 8, y: 5, z: 5}
+  InsideWaypoints: []
+--- !u!23 &858216526
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858216524}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &858216527
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858216524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &858216528
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858216524}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &858216529
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858216524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.05, y: 0.456, z: 8.15}
+  m_LocalScale: {x: 11.811606, y: 3.8503575, z: 6.549007}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &863525752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,8 +3780,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 7217356}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1843111283}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 1950386727}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.28, y: 0.73, z: 1.77}
 --- !u!1 &865916861
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,8 +3856,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1718330503}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1211374163}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 673945616}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1670111833}
+    distanceToNeighbour: 7.823068
+  position: {x: -11.72, y: 0.73, z: -26.23}
 --- !u!1 &873871639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,8 +3930,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1065045232}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 447167089}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 882391087}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1472172629}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: 24.77}
 --- !u!1 &882391084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,8 +4006,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 155552611}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1065045232}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 287655925}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1472172629}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1707154773}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 7.81025
+  position: {x: 13.3, y: 0.73, z: 18.77}
 --- !u!1 &930326716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,8 +4173,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 142379647}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 7217356}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 7.797462
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 7.8102503
+  position: {x: -1.7000008, y: 0.73, z: 7.7700005}
 --- !u!1 &967395424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3120,8 +4251,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1512948727}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1707154773}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1447107769}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 287655925}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1505385035}
+    distanceToNeighbour: 7.797462
+  position: {x: 18.28, y: 0.73, z: 7.7700005}
 --- !u!1 &1003332373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,8 +4325,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 201132696}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 2112768834}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 811386578}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 7.81025
+  position: {x: 13.3, y: 0.73, z: -32.23}
 --- !u!1 &1030987117
 GameObject:
   m_ObjectHideFlags: 0
@@ -3233,14 +4384,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   info:
-    startPosition: {x: 0, y: 0, z: 0}
-    endPosition: {x: 0, y: 0, z: 0}
+    currentPosition: {x: 0, y: 0, z: 0}
+    goalPosition: {x: 0, y: 0, z: 0}
     minDistanceToWaypoint: 0.1
     MaxPathingDistance: 20
     Path: []
     NodeTraversalCount: 0
-  speed: 4
-  turningSpeed: 1
+  speed: 6
+  follow: 1
+  bias: 0.6
+  turnSpeed: 5
+  debugGoal: {fileID: 1489220302}
+  radius: 20
 --- !u!23 &1030987120
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3299,12 +4454,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1030987117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.31, z: 0}
+  m_LocalPosition: {x: 16.02, y: 0.31, z: -5.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 354108704}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1065045229
 GameObject:
@@ -3368,8 +4522,16 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1472172629}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 882391087}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 155552611}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 7.81025
+  position: {x: 13.3, y: 0.73, z: 24.77}
 --- !u!1 &1105169598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,6 +4614,104 @@ Transform:
   m_Father: {fileID: 1185851471}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1126891255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1126891260}
+  - component: {fileID: 1126891259}
+  - component: {fileID: 1126891258}
+  - component: {fileID: 1126891257}
+  - component: {fileID: 1126891256}
+  m_Layer: 9
+  m_Name: NavigationCollider (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1126891256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126891255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c4caed7ae24eb4894c45c890ac8db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfluence: 1
+  InfluenceRange: 10
+  InfluenceDimensions: {x: 8, y: 5, z: 5}
+  InsideWaypoints: []
+--- !u!23 &1126891257
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126891255}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1126891258
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126891255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1126891259
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126891255}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1126891260
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126891255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.82, y: 0.456, z: 7.23}
+  m_LocalScale: {x: 11.811606, y: 3.8503575, z: 6.549007}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1136914145
 GameObject:
   m_ObjectHideFlags: 0
@@ -3514,8 +4774,143 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 369042155}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 545907146}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 91491730}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 610594320}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: -9.23}
+--- !u!1 &1142510769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1142510775}
+  - component: {fileID: 1142510774}
+  - component: {fileID: 1142510773}
+  - component: {fileID: 1142510772}
+  - component: {fileID: 1142510771}
+  - component: {fileID: 1142510770}
+  m_Layer: 4
+  m_Name: Pathfinder (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1142510770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142510769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58b409a4a117f84285de7fad28492c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    currentPosition: {x: 0, y: 0, z: 0}
+    goalPosition: {x: 0, y: 0, z: 0}
+    minDistanceToWaypoint: 0.1
+    MaxPathingDistance: 20
+    Path: []
+    NodeTraversalCount: 0
+  speed: 6
+  follow: 1
+  bias: 0.6
+  turnSpeed: 5
+  debugGoal: {fileID: 1489220302}
+  radius: 20
+--- !u!54 &1142510771
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142510769}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!23 &1142510772
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142510769}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 76db8bd4a725d324d8aa83760ad07d1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &1142510773
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142510769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1142510774
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142510769}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1142510775
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142510769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.02, y: 0.31, z: -15.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1145723600
 GameObject:
   m_ObjectHideFlags: 0
@@ -3578,8 +4973,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1724070091}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1636055234}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1447024800}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 353198399}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 7.823068
+  position: {x: -11.72, y: 0.73, z: 24.77}
 --- !u!1 &1173333833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,8 +5047,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 91104926}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 7.81025
+  position: {x: -1.7000008, y: 0.73, z: -15.23}
 --- !u!1 &1173410224
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,8 +5121,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 566207919}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 811386578}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 545907146}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 610594320}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: -21.23}
 --- !u!1 &1185851467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3791,7 +5218,7 @@ Transform:
   - {fileID: 1105169602}
   - {fileID: 1766867128}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1194123232
 GameObject:
@@ -3855,8 +5282,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1805460922}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 771439721}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1447024800}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 418146287}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: 12.77}
 --- !u!1 &1211374160
 GameObject:
   m_ObjectHideFlags: 0
@@ -3919,8 +5360,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 673945616}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1670111833}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 865916864}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1718330503}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 7.823068
+  position: {x: -11.72, y: 0.73, z: -32.23}
 --- !u!1 &1216494294
 GameObject:
   m_ObjectHideFlags: 0
@@ -3983,8 +5434,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1950386727}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 668387057}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 7217356}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 1843111283}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.2799997, y: 0.73, z: -4.2299995}
 --- !u!1 &1240073351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4047,8 +5514,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 91104926}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 741702689}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 1173333836}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 9.9800005
+  position: {x: -6.700001, y: 0.73, z: -21.23}
 --- !u!1 &1251268858
 GameObject:
   m_ObjectHideFlags: 0
@@ -4111,8 +5590,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 566207919}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 610594320}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1173410227}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: -21.23}
 --- !u!1001 &1264503395
 Prefab:
   m_ObjectHideFlags: 0
@@ -4150,7 +5647,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4468535383991878, guid: 5394113691ce2154587af145e3c1a5b5, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114454554034161064, guid: 5394113691ce2154587af145e3c1a5b5,
+        type: 2}
+      propertyPath: useSphereCast
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5394113691ce2154587af145e3c1a5b5, type: 2}
@@ -4217,8 +5719,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1173333836}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 668387057}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 91104926}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.2799997, y: 0.73, z: -15.23}
 --- !u!1 &1288375686
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,8 +5799,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1950386727}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 7217356}
+    distanceToNeighbour: 7.8102493
+  - neighbourWaypoint: {fileID: 1893488504}
+    distanceToNeighbour: 7.8230677
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 598067495}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: -4.2299995}
 --- !u!1 &1306936435
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,8 +5877,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 590519697}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 865916864}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 840704130}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1718330503}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 7.0852237
+  - neighbourWaypoint: {fileID: 1825445709}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 7.823068
+  position: {x: -11.72, y: 0.73, z: -21.23}
 --- !u!1 &1402949054
 GameObject:
   m_ObjectHideFlags: 0
@@ -4409,8 +5957,28 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 771439721}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1447024800}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1636055234}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1558329723}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1805460922}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 1145723603}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 353198399}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: 18.77}
 --- !u!1 &1427961508
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,8 +6041,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 7217356}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1893488504}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 1950386727}
+    distanceToNeighbour: 7.8102493
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 7.8230677
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 348978742}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: 1.77}
 --- !u!1 &1445823352
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,8 +6235,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 353198399}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1805460922}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1145723603}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1724070091}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 418146287}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 1636055234}
+    distanceToNeighbour: 7.823068
+  position: {x: -11.72, y: 0.73, z: 18.77}
 --- !u!1 &1447107766
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,8 +6315,16 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1505385035}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 369042155}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 91491730}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 1843111283}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: 1.77}
 --- !u!1 &1472172626
 GameObject:
   m_ObjectHideFlags: 0
@@ -4781,8 +6387,96 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1065045232}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 155552611}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 882391087}
+    distanceToNeighbour: 7.7974615
+  position: {x: 18.28, y: 0.73, z: 24.77}
+--- !u!1 &1489220298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1489220302}
+  - component: {fileID: 1489220301}
+  - component: {fileID: 1489220300}
+  - component: {fileID: 1489220299}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1489220299
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489220298}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &1489220300
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489220298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1489220301
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489220298}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1489220302
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1489220298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.87, y: 0.71, z: 23.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1505385032
 GameObject:
   m_ObjectHideFlags: 0
@@ -4845,8 +6539,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1447107769}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1843111283}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 91491730}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 369042155}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 7.8102493
+  position: {x: 13.3, y: 0.73, z: 1.77}
 --- !u!1 &1512948724
 GameObject:
   m_ObjectHideFlags: 0
@@ -4909,8 +6613,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 967395427}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 287655925}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1505385035}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 1707154773}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1447107769}
+    distanceToNeighbour: 7.797462
+  position: {x: 13.3, y: 0.73, z: 7.7700005}
 --- !u!1 &1519540982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4973,8 +6687,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 407966001}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 840704130}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 598067495}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1825445709}
+    distanceToNeighbour: 7.7974615
+  position: {x: -11.72, y: 0.73, z: -9.23}
 --- !u!1 &1558329720
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,8 +6761,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 447167089}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1636055234}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 771439721}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 7.81025
+  position: {x: -1.7000008, y: 0.73, z: 24.77}
 --- !u!1 &1570409563
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,8 +6835,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 771439721}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1811222518}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 7.81025
+  position: {x: -1.7000008, y: 0.73, z: 12.77}
 --- !u!1 &1592215155
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,11 +6939,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1592215155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.59, y: 0.456, z: -8.54}
+  m_LocalPosition: {x: -4.09, y: 0.456, z: -9.84}
   m_LocalScale: {x: 11.811606, y: 3.8503575, z: 6.549007}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1608534960
 GameObject:
@@ -5263,8 +7007,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1173333836}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 840704130}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 91104926}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 1825445709}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: -15.23}
 --- !u!1 &1631175437
 GameObject:
   m_ObjectHideFlags: 0
@@ -5327,8 +7083,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 741702689}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 865916864}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1670111833}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 91104926}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 231170460}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1211374163}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 1718330503}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: -26.23}
 --- !u!1 &1636055231
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,8 +7165,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1558329723}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1145723603}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 771439721}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1447024800}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 447167089}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 1724070091}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: 24.77}
 --- !u!1 &1665506120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5455,8 +7243,28 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1939004871}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1519540985}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1950386727}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 7.0852237
+  - neighbourWaypoint: {fileID: 1173333836}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 840704130}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 668387057}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 407966001}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: -9.23}
 --- !u!1 &1670111830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5519,8 +7327,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 231170460}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1211374163}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 741702689}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 865916864}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 2090002575}
+    distanceToNeighbour: 9.9800005
+  - neighbourWaypoint: {fileID: 673945616}
+    distanceToNeighbour: 10
+  position: {x: -6.700001, y: 0.73, z: -32.23}
 --- !u!1 &1707154770
 GameObject:
   m_ObjectHideFlags: 0
@@ -5583,8 +7405,16 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 287655925}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 155552611}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 882391087}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 9.9800005
+  position: {x: 18.28, y: 0.73, z: 12.77}
 --- !u!1 &1718330500
 GameObject:
   m_ObjectHideFlags: 0
@@ -5647,8 +7477,16 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 865916864}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 673945616}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1211374163}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: -26.23}
 --- !u!1 &1724070088
 GameObject:
   m_ObjectHideFlags: 0
@@ -5711,8 +7549,16 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1145723603}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 353198399}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1447024800}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1636055234}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: 24.77}
 --- !u!1 &1727788584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5775,8 +7621,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 668387057}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 91491730}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 610594320}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1136914148}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: -9.23}
 --- !u!1 &1766064012
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,8 +7703,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 610594320}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 566207919}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 668387057}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 545907146}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: -15.23}
 --- !u!1 &1766867124
 GameObject:
   m_ObjectHideFlags: 0
@@ -5985,8 +7867,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 418146287}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 588287692}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 1447024800}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 136634282}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 353198399}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 7.823068
+  position: {x: -11.72, y: 0.73, z: 12.77}
 --- !u!1 &1811222515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6049,8 +7945,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 771439721}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 81198299}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 447167089}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1558329723}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1402949057}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.2799997, y: 0.73, z: 18.77}
 --- !u!1 &1825445706
 GameObject:
   m_ObjectHideFlags: 0
@@ -6113,8 +8025,16 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 840704130}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 407966001}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1519540985}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 10
+  position: {x: -16.7, y: 0.73, z: -15.23}
 --- !u!1 &1843111280
 GameObject:
   m_ObjectHideFlags: 0
@@ -6177,8 +8097,143 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1505385035}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 91491730}
+    distanceToNeighbour: 7.8102493
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 1447107769}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: 1.77}
+--- !u!1 &1845603026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1845603032}
+  - component: {fileID: 1845603031}
+  - component: {fileID: 1845603030}
+  - component: {fileID: 1845603029}
+  - component: {fileID: 1845603028}
+  - component: {fileID: 1845603027}
+  m_Layer: 4
+  m_Name: Pathfinder (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1845603027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845603026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58b409a4a117f84285de7fad28492c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  info:
+    currentPosition: {x: 0, y: 0, z: 0}
+    goalPosition: {x: 0, y: 0, z: 0}
+    minDistanceToWaypoint: 0.1
+    MaxPathingDistance: 20
+    Path: []
+    NodeTraversalCount: 0
+  speed: 6
+  follow: 1
+  bias: 0.6
+  turnSpeed: 5
+  debugGoal: {fileID: 1489220302}
+  radius: 20
+--- !u!54 &1845603028
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845603026}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!23 &1845603029
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845603026}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 76db8bd4a725d324d8aa83760ad07d1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &1845603030
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845603026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1845603031
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845603026}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1845603032
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845603026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.02, y: 0.31, z: -25.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1893488501
 GameObject:
   m_ObjectHideFlags: 0
@@ -6241,8 +8296,22 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 348978742}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 5.0199995
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 588287692}
+    distanceToNeighbour: 6.0000005
+  - neighbourWaypoint: {fileID: 598067495}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 136634282}
+    distanceToNeighbour: 7.797462
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 7.8230677
+  position: {x: -11.72, y: 0.73, z: 1.77}
 --- !u!1 &1919362207
 GameObject:
   m_ObjectHideFlags: 0
@@ -6305,8 +8374,24 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1136914148}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 91491730}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 610594320}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 369042155}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 31780545}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 545907146}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1766064015}
+    distanceToNeighbour: 7.81025
+  position: {x: 13.3, y: 0.73, z: -9.23}
 --- !u!1 &1939004868
 GameObject:
   m_ObjectHideFlags: 0
@@ -6369,8 +8454,52 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 668387057}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1950386727}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1665506123}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1173333836}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 7.071068
+  - neighbourWaypoint: {fileID: 1282113898}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1608534963}
+    distanceToNeighbour: 7.81025
+  position: {x: -1.7000008, y: 0.73, z: -9.23}
+--- !u!1 &1943067635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1943067636}
+  m_Layer: 9
+  m_Name: EndPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1943067636
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943067635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2073255592}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950386724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6433,8 +8562,18 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1216494297}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 7217356}
+    distanceToNeighbour: 5.9999995
+  - neighbourWaypoint: {fileID: 863525755}
+    distanceToNeighbour: 7.797461
+  - neighbourWaypoint: {fileID: 1427961511}
+    distanceToNeighbour: 7.8102493
+  position: {x: -1.7000008, y: 0.73, z: -4.2299995}
 --- !u!1 &1977834257
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,22 +8636,26 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
---- !u!4 &2008090954
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4694280476708566, guid: 3037da18c6d70b345bb7ea3d0f79696e,
-    type: 2}
-  m_PrefabInternal: {fileID: 770798398}
-  m_GameObject: {fileID: 2144815486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 354108704}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 741702689}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 2090002575}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 91104926}
+    distanceToNeighbour: 7.05694
+  - neighbourWaypoint: {fileID: 1251268861}
+    distanceToNeighbour: 7.0852246
+  - neighbourWaypoint: {fileID: 231170460}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 2112768834}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.2799997, y: 0.73, z: -26.23}
 --- !u!1 &2026284637
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,6 +8721,134 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &2073255585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2073255592}
+  - component: {fileID: 2073255591}
+  - component: {fileID: 2073255590}
+  - component: {fileID: 2073255589}
+  - component: {fileID: 2073255588}
+  - component: {fileID: 2073255587}
+  - component: {fileID: 2073255586}
+  m_Layer: 9
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &2073255586
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2073255585}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2073255587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2073255585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 754a1c522ca4c4643a1a6759672b85ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EndPosition: {fileID: 0}
+--- !u!114 &2073255588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2073255585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c4caed7ae24eb4894c45c890ac8db1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showInfluence: 1
+  InfluenceRange: 10
+  InfluenceDimensions: {x: 8, y: 5, z: 5}
+  InsideWaypoints: []
+--- !u!23 &2073255589
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2073255585}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &2073255590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2073255585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2073255591
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2073255585}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2073255592
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2073255585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.31, y: -0.44, z: 7.45}
+  m_LocalScale: {x: 9.084357, y: 3.8503575, z: 3.8473928}
+  m_Children:
+  - {fileID: 1943067636}
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2090002572
 GameObject:
   m_ObjectHideFlags: 0
@@ -6640,8 +8911,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 231170460}
+    distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 2112768834}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 741702689}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1670111833}
+    distanceToNeighbour: 9.9800005
+  position: {x: 3.2799997, y: 0.73, z: -32.23}
 --- !u!1 &2112768831
 GameObject:
   m_ObjectHideFlags: 0
@@ -6704,8 +8987,20 @@ MonoBehaviour:
   _radius: 1
   penalty: 0
   type: 0
-  neighbours: []
-  position: {x: 0, y: 0, z: 0}
+  neighbours:
+  - neighbourWaypoint: {fileID: 1003332376}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 2090002575}
+    distanceToNeighbour: 5.0200005
+  - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1977834260}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 201132696}
+    distanceToNeighbour: 9.9800005
+  position: {x: 8.3, y: 0.73, z: -32.23}
 --- !u!1 &2140947030
 GameObject:
   m_ObjectHideFlags: 0
@@ -6790,18 +9085,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2144815486
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 770798398}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2008090954}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1

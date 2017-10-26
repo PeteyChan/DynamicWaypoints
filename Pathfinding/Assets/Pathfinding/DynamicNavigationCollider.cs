@@ -34,7 +34,15 @@ public class DynamicNavigationCollider : MonoBehaviour
 
 	void OnDisable()
 	{
+		if (!Navigator.Instance) return;
 		navigatorColliders.Remove(this);
+		foreach(var waypoint in InsideWaypoints)
+		{
+			if (!waypoint) continue;
+			waypoint.gameObject.SetActive(true);
+			Navigator.Instance.QueueNeighbourUpdate(waypoint);
+		}
+
 	}
 
 	public List<Waypoint> InsideWaypoints = new List<Waypoint>();
@@ -61,7 +69,7 @@ public class DynamicNavigationCollider : MonoBehaviour
 			for (int i = 0; i < count; ++ i)
 			{
 				var waypoint = colliders[i].GetComponent<Waypoint>();
-				if (waypoint && !InsideWaypoints.Contains(waypoint))
+				if (waypoint && waypoint.enabled && !InsideWaypoints.Contains(waypoint))
 				{
 					InsideWaypoints.Add(waypoint);
 				}
