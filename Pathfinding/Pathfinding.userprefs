@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Tests\TestMoveCollider.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Pathfinding\Navigator.cs">
     <Files>
-      <File FileName="Assets\Pathfinding\Navigator.cs" Line="399" Column="60" />
-      <File FileName="Assets\Pathfinding\DynamicNavigationCollider.cs" Line="73" Column="6" />
+      <File FileName="Assets\Pathfinding\Navigator.cs" Line="315" Column="36" />
+      <File FileName="Assets\Pathfinding\DynamicNavigationCollider.cs" Line="1" Column="1" />
       <File FileName="Assets\Pathfinding\WapointType.cs" Line="1" Column="1" />
       <File FileName="Assets\Pathfinding\Waypoint.cs" Line="1" Column="1" />
       <File FileName="Assets\Tests\TestMoveCollider.cs" Line="20" Column="67" />
-      <File FileName="Assets\Tests\TestPathfinder.cs" Line="68" Column="3" NotebookId="1" />
+      <File FileName="Assets\Tests\TestPathfinder.cs" Line="75" Column="2" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

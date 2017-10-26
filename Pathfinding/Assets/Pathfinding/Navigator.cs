@@ -285,29 +285,7 @@ public class Navigator : MonoBehaviour
 		}
 		waypoint.neighbours.Clear();
 	}
-
-	Waypoint GetClosestWaypoint(Vector3 start, Vector3 goal)
-	{
-		//Find Start Node
-		var shortestDistance = Mathf.Infinity;
-		Collider shortestCollider = null;
-		int count = Physics.OverlapSphereNonAlloc(start, maxPathLength, colliders, WaypointLayer);
-		for (int i = 0; i < count; ++i)
-		{
-			var distanceToStart = (colliders[i].transform.position - start).magnitude;
-			var distanceToGoal = (goal - colliders[i].transform.position).magnitude;
-
-			var distance = .6f*distanceToStart + .4f*distanceToGoal;
-			if (distance < shortestDistance)
-			{
-				shortestDistance = distance;
-				shortestCollider = colliders[i];
-			}
-		}
-		if (shortestCollider) return shortestCollider.GetComponent<Waypoint>();
-		return null;
-	}
-
+		
 	Waypoint GetClosestWaypoint(Vector3 goal)
 	{
 		//Find Start Node
@@ -339,8 +317,6 @@ public class Navigator : MonoBehaviour
 		var IgnoreFunction = info.IgnoreWaypointFunction;
 		var GoalFunction = info.GoalWaypointFunction;
 		var PenaltyFunction = info.WaypointPenaltyFunction;
-
-		var maxPathingDistance = info.MaxPathingDistance;
 
 		info.NodeTraversalCount = 0;
 		path.Clear();
