@@ -46,6 +46,8 @@ public class Navigator : MonoBehaviour
 	{
 		if (instance == null)
 			instance = FindObjectOfType<Navigator>();
+		if (instance != this)
+			Destroy(gameObject);
 	}
 
 	[ExecuteInEditMode]
@@ -63,6 +65,8 @@ public class Navigator : MonoBehaviour
 	public int MaxPathingUpdatesPerFrame = 5;
 	[Tooltip("Maximum length that any path between nodes can be")]
 	public float maxPathLength = 5f;
+	[Tooltip("Maximum number of nodes that can be traversed while pathfinding")]
+	public int maxNodeTraversal = 50;
 	[Tooltip("Choose whether to check path integrity using Sphere Casts")]
 	public bool useSphereCast = false;
 	[Tooltip("Limit the maximum radius of spherecast from waypoints")]
@@ -103,7 +107,7 @@ public class Navigator : MonoBehaviour
 	HashSet<Waypoint> ignoreNodes = new HashSet<Waypoint>();
 	List<Waypoint> searchNodes = new List<Waypoint>();
 
-	void FixedUpdate()
+	void Update()
 	{
 		PendingWaypoints = waypointsPendingUpdate.Count;
 		PendingNeighbours = neighboursPendingUpdate.Count;
@@ -135,17 +139,21 @@ public class Navigator : MonoBehaviour
 
 		while (pathingPendingUpdate.Count > 0 && itemsProcessed < MaxPathingUpdatesPerFrame)
 		{
+			itemsProcessed ++;
 			var info = pathingPendingUpdate.Dequeue();
 			if (pathUpdateLookup.Contains(info))
 			{
-				itemsProcessed ++;
-
 				GetPath(info);
-
-				pathingPendingUpdate.Enqueue(info);				
+				pathUpdate.Push(info);
 			}
 		}
+		while (pathUpdate.Count > 0)
+		{
+			pathingPendingUpdate.Enqueue(pathUpdate.Pop());
+		}
 	}
+	Stack<NavigatorInfo> pathUpdate = new Stack<NavigatorInfo>();
+
 
 	void ProcessWaypoint(Waypoint waypoint)
 	{
@@ -305,8 +313,11 @@ public class Navigator : MonoBehaviour
 		return null;
 	}
 
+	Stack<Vector3> ReverseList = new Stack<Vector3>(); // sucks using stack for this, but using List.Reverse causes allocations
+
 	[HideInInspector]
 	public Collider[] colliders = new Collider[64];
+
 	public void GetPath(NavigatorInfo info)// CustomIgnoreWaypoint IgnoreFunction, CustomGoal GoalFunction, CustomPenalty PenaltyFunction)
 	{
 		Waypoint startNode = null;
@@ -326,7 +337,6 @@ public class Navigator : MonoBehaviour
 		//Debug.Log(startNode);
 		if (startNode == null || (start - goal).magnitude < info.minDistanceToWaypoint)
 		{
-			Debug.Log("No Start Node");
 			path.Add(start);
 			path.Add(goal);
 			return;
@@ -336,7 +346,7 @@ public class Navigator : MonoBehaviour
 
 		if (endNode != null)
 		{
-			if ( (start - goal).sqrMagnitude < (endNode.position - goal).sqrMagnitude)
+			if ( (start - goal).sqrMagnitude < (endNode.position - goal).sqrMagnitude || startNode == endNode)
 			{
 				path.Add(start);
 				path.Add(goal);
@@ -363,10 +373,11 @@ public class Navigator : MonoBehaviour
 		Waypoint closestNode = startNode;
 
 		int loopcount = 0;
-		while(searchNodes.Count > 0)
+		while(searchNodes.Count > 0 && loopcount < maxNodeTraversal)
 		{
 			loopcount ++;
 			currentNode = searchNodes[searchNodes.Count - 1];
+			searchNodes.RemoveAt(searchNodes.Count - 1);
 
 			if (closestNode.distToTarget > currentNode.distToTarget)
 			{
@@ -378,7 +389,6 @@ public class Navigator : MonoBehaviour
 				}
 			}
 
-			searchNodes.RemoveAt(searchNodes.Count - 1);
 			vistedNodes.Add(currentNode); 
 			var foundEndWaypoint = false;
 
@@ -394,6 +404,7 @@ public class Navigator : MonoBehaviour
 
 				if (vistedNodes.Contains(neighbour))
 				{
+					continue;
 					if (neighbour.distTravelled > distTravelled)
 					{
 						neighbour.distTravelled = distTravelled;
@@ -436,21 +447,28 @@ public class Navigator : MonoBehaviour
 
 		if ((goal - closestNode.position).magnitude > info.minDistanceToWaypoint)
 		{
-			path.Add(goal);
+			ReverseList.Push(goal);
+			//path.Add(goal);
 		}
 
 		while (currentNode.previous != null)
 		{
-			path.Add(currentNode.position);
+			ReverseList.Push(currentNode.position);
+			//path.Add(currentNode.position);
 			currentNode = currentNode.previous;
 		}
 		if ((currentNode.position - start).magnitude > info.minDistanceToWaypoint)
 		{
-			path.Add(currentNode.position);
+			ReverseList.Push(currentNode.position);
+			//path.Add(currentNode.position);
 		}
-
-		path.Reverse();
+		while (ReverseList.Count > 0)
+		{
+			path.Add(ReverseList.Pop());
+		}
+		//path.Reverse();
 		info.NodeTraversalCount = loopcount;
+
 		return;
 	}
 
