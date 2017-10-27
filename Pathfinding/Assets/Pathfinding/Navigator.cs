@@ -346,12 +346,12 @@ public class Navigator : MonoBehaviour
 
 		if (endNode != null)
 		{
-			if ( (start - goal).sqrMagnitude < (endNode.position - goal).sqrMagnitude || startNode == endNode)
+			if ( startNode == endNode || (start - goal).sqrMagnitude < (endNode.position - goal).sqrMagnitude)
 			{
 				path.Add(start);
 				path.Add(goal);
 				return;
-			}
+			}	
 		}
 //
 		Waypoint currentNode = null;
@@ -405,11 +405,11 @@ public class Navigator : MonoBehaviour
 				if (vistedNodes.Contains(neighbour))
 				{
 					continue;
-					if (neighbour.distTravelled > distTravelled)
-					{
-						neighbour.distTravelled = distTravelled;
-						neighbour.previous = currentNode;
-					}
+//					if (neighbour.distTravelled > distTravelled)
+//					{
+//						neighbour.distTravelled = distTravelled;
+//						neighbour.previous = currentNode;
+//					}
 				}
 				else
 				{
@@ -597,6 +597,14 @@ public class NavigatorInfo
 		{
 			var direction = (NextPosition - currentPosition).normalized;
 			return direction;
+		}
+	}
+
+	public bool AtDestination
+	{
+		get
+		{
+			return (currentPosition - goalPosition).magnitude < minDistanceToWaypoint;
 		}
 	}
 

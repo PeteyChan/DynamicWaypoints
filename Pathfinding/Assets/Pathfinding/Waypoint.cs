@@ -139,6 +139,9 @@ public class Waypoint : MonoBehaviour
 	[HideInInspector, SerializeField]
 	public Vector3 position;
 
+	public bool ShowPathRange;
+
+
 	Collider Collider;
 
 	void Awake()
@@ -275,6 +278,13 @@ public class Waypoint : MonoBehaviour
 				}
 			}
 		}
+
+		if (ShowPathRange)
+		{
+			Gizmos.color = Color.red;
+			Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
+			Gizmos.DrawWireSphere(Vector3.zero, maxPath);
+		}
 	}
 
 	void DrawSphereGizmoConnectors(Waypoint neighbour, Quaternion rot, Vector3 drawSide)
@@ -358,6 +368,8 @@ public class WaypointInspector : Editor
 		if (Navigator.Instance.useSphereCast)
 			waypoint.radius = EditorGUILayout.Slider(new GUIContent("RadiusSize", "Radius of spherecast to check valid paths"), waypoint.radius, .1f, Navigator.Instance.maxRadiusCheck);
 
+		waypoint.ShowPathRange = EditorGUILayout.Toggle(new GUIContent("Show Path Range", "Shows range which the waypoint can detect and connect to other waypoints"), waypoint.ShowPathRange);
+
 		if (EditorGUI.EndChangeCheck())
 		{
 			foreach(var item in targets)
@@ -367,6 +379,7 @@ public class WaypointInspector : Editor
 				otherTargets.dynamicWaypoint = waypoint.dynamicWaypoint;
 				otherTargets.radius = waypoint.radius;
 				otherTargets.penalty = waypoint.penalty;
+				otherTargets.ShowPathRange = waypoint.ShowPathRange;
 			}
 		}
 
