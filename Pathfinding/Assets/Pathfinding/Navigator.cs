@@ -71,7 +71,7 @@ public class Navigator : MonoBehaviour
 	public bool useSphereCast = false;
 	[Tooltip("Limit the maximum radius of spherecast from waypoints")]
 	public float maxRadiusCheck = 1f;
-	[Tooltip("Layer which to check for Waypoints")]
+	[Tooltip("Layer which to check for Waypoints, to speed up internal checks it's important that only waypoints are in this layer")]
 	public LayerMask WaypointLayer;
 	[Tooltip("Layers which can block path finding")]
 	public LayerMask NavigationCollisionLayers;
@@ -142,15 +142,15 @@ public class Navigator : MonoBehaviour
 			if (pathUpdateLookup.Contains(info))
 			{
 				GetPath(info);
-				pathUpdate.Push(info);
+				processedPaths.Push(info);
 			}
 		}
-		while (pathUpdate.Count > 0)
+		while (processedPaths.Count > 0)
 		{
-			pathingPendingUpdate.Enqueue(pathUpdate.Pop());
+			pathingPendingUpdate.Enqueue(processedPaths.Pop());
 		}
 	}
-	Stack<NavigatorInfo> pathUpdate = new Stack<NavigatorInfo>();
+	Stack<NavigatorInfo> processedPaths = new Stack<NavigatorInfo>();
 
 
 	void ProcessWaypoint(Waypoint waypoint)

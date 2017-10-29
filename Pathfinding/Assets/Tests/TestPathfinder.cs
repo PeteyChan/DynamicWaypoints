@@ -19,12 +19,13 @@ public class TestPathfinder : MonoBehaviour
 
 	void OnEnable()
 	{
-		Navigator.StartUpdates(info);
+		Navigator.StartUpdates(info); // Navigator will continuously update info
 	}
 
 	// Update is called once per frame
 	void Update () 
 	{
+		Navigator.StartUpdates(info);
 		if (Input.GetMouseButton(0))
 		{
 			var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -37,7 +38,7 @@ public class TestPathfinder : MonoBehaviour
 		}					
 	}
 
-	public bool follow;
+	public bool traversePath = true;
 
 	[Range(0,1)]
 	public float bias;
@@ -48,23 +49,23 @@ public class TestPathfinder : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		info.currentPosition = transform.position;
+		info.currentPosition = transform.position; // set the start and goal positions
 		info.goalPosition = goal;
 
 		float force = Mathf.Min((goal - transform.position).magnitude, 2f)/2f * speed;
 
-		if (follow)
+		if (traversePath)
 		{
-
-			direction = Vector3.Lerp(direction , info.DirectionToNextPosition, Time.fixedDeltaTime * turnSpeed);
+			direction = Vector3.Lerp(direction , info.DirectionToNextPosition, Time.fixedDeltaTime * turnSpeed); // the direction vector gives a unit one vector toward the next waypoint
 		}
 		else direction = Vector3.Lerp(direction , Vector3.zero, Time.fixedDeltaTime * turnSpeed);
-		rb.velocity = direction * force * speed;
+
+		rb.velocity = direction * force * speed;	
 	}
 
 	void OnDisable()
 	{
-		Navigator.StopUpdates(info);
+		Navigator.StopUpdates(info);	// Stops updating info object. Important to stop otherwise it will keep updating in the background
 	}
 
 

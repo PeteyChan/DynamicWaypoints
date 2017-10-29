@@ -52,19 +52,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxWaypointUpdatesPerFrame: 10
-  MaxPathingUpdatesPerFrame: 5
+  MaxPathingUpdatesPerFrame: 20
   maxPathLength: 10
-  useSphereCast: 0
+  maxNodeTraversal: 50
+  useSphereCast: 1
   maxRadiusCheck: 1
   WaypointLayer:
     serializedVersion: 2
     m_Bits: 256
-  CollisionLayer:
+  NavigationCollisionLayers:
     serializedVersion: 2
-    m_Bits: 1
-  NavigationCollisionLayer:
-    serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 513
   drawGizmos: 1
   gizmoStrength: 0.8
   connectionColor: {r: 1, g: 1, b: 1, a: 1}

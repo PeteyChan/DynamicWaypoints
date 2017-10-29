@@ -5,24 +5,23 @@ using UnityEngine;
 public class DynamicNavigationCollider : MonoBehaviour 
 {
 	static List<DynamicNavigationCollider> navigatorColliders = new List<DynamicNavigationCollider>();
+	[Tooltip("Displays how far it will influence the pathing of colliders")]
 	public bool showInfluence;
+	[Tooltip("How far should this collider be able to influence waypoints when it moves")]
 	public float InfluenceRange = 5f;
-	public Vector3 InfluenceDimensions = new Vector3(8,5,5);
 
 	Vector3 position;
-
-	enum InfluenceType
-	{
-		Sphere, Box
-	}
-
+	Quaternion rotation;
 	Collider col;
 
 	void Awake()
 	{
 		col = GetComponent<Collider>();
 		if (!col)
+		{
+			Debug.LogErrorFormat("{0} requires an attached Collider for Dynamic Navigation", name);
 			gameObject.SetActive(false);
+		}			
 	}
 
 	void OnEnable()
@@ -34,6 +33,11 @@ public class DynamicNavigationCollider : MonoBehaviour
 
 	void OnDisable()
 	{
+		foreach(var item in disabledWaypoints)
+		{
+			if (item)
+				item.gameObject.SetActive(true);
+		}
 		if (!Navigator.Instance) return;
 		navigatorColliders.Remove(this);
 	}
@@ -46,22 +50,24 @@ public class DynamicNavigationCollider : MonoBehaviour
 		forceUpdate = true;
 	}
 
-	public List<Waypoint> disabledWaypoints = new List<Waypoint>();
+	List<Waypoint> disabledWaypoints = new List<Waypoint>();
 	void UpdateCollider()
 	{
-		if (position != transform.position || forceUpdate)
+		if (forceUpdate || position != transform.position || rotation != transform.rotation)
 		{
+			position = transform.position;
+			rotation = transform.rotation;
+
 			for (int i = 0; i < disabledWaypoints.Count; ++i)
 			{
 				var waypoint = disabledWaypoints[i];
 				if ((waypoint.position - col.ClosestPoint(waypoint.position)).magnitude > waypoint.radius)
 				{
 					waypoint.gameObject.SetActive(true);
-				}	
+				}
 			}
 			disabledWaypoints.RemoveAll( w => {return w.gameObject.activeSelf;});
 
-			position = transform.position;
 			int count = 0;
 
 			var colliders = Navigator.Instance.colliders;
