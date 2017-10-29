@@ -34,12 +34,7 @@ public class TestPathfinder : MonoBehaviour
 			{
 				goal = info.point;
 			}
-		}
-
-		if (Input.GetKeyDown(KeyCode.Alpha1))
-			Navigator.StartUpdates(info);
-		if (Input.GetKeyDown(KeyCode.Alpha2))
-			Navigator.StopUpdates(info);						
+		}					
 	}
 
 	public bool follow;

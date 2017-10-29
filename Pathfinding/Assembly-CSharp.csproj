@@ -56,8 +56,10 @@
      <Compile Include="Assets\Pathfinding\Navigator.cs" />
      <Compile Include="Assets\Pathfinding\WapointType.cs" />
      <Compile Include="Assets\Pathfinding\Waypoint.cs" />
+     <Compile Include="Assets\TestPathfinderCountUI.cs" />
      <Compile Include="Assets\Tests\TestMoveCollider.cs" />
      <Compile Include="Assets\Tests\TestPathfinder.cs" />
+     <Compile Include="Assets\TestSpawner.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
