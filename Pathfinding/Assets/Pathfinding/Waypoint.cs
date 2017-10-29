@@ -362,11 +362,11 @@ public class WaypointInspector : Editor
 			
 		waypoint.dynamicWaypoint = EditorGUILayout.Toggle(new GUIContent("Dynamic Waypoint", "Marks waypoint as dynamic, automatically updates when it's position is moved"), waypoint.dynamicWaypoint);
 		waypoint.type = (WaypointType)EditorGUILayout.EnumPopup(new GUIContent("Type", "Type of Waypoint, used for querying nodes during callback functions"), waypoint.type);
-		waypoint.maxPath = EditorGUILayout.Slider(new GUIContent("Max Path", "Maximum distance this node can path to others"), waypoint.maxPath, 0f, Navigator.Instance.maxPathLength);
+		waypoint.maxPath = EditorGUILayout.Slider(new GUIContent("Max Path", "Maximum distance this waypoint can connect others"), waypoint.maxPath, 0f, Navigator.Instance.maxPathLength);
 		waypoint.penalty = EditorGUILayout.Slider(new GUIContent ("Penalty", "Penalty to path finding when traversing this node"), waypoint.penalty, 0f, 10f);
 
 		if (Navigator.Instance.useSphereCast)
-			waypoint.radius = EditorGUILayout.Slider(new GUIContent("RadiusSize", "Radius of spherecast to check valid paths"), waypoint.radius, .1f, Navigator.Instance.maxRadiusCheck);
+			waypoint.radius = EditorGUILayout.Slider(new GUIContent("RadiusSize", "Radius of spherecast when checking valid paths and how close Navigation Colliders can get before disabling Waypoint"), waypoint.radius, .1f, Navigator.Instance.maxRadiusCheck);
 
 		waypoint.ShowPathRange = EditorGUILayout.Toggle(new GUIContent("Show Path Range", "Shows range which the waypoint can detect and connect to other waypoints"), waypoint.ShowPathRange);
 

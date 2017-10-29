@@ -36,16 +36,7 @@ public class DynamicNavigationCollider : MonoBehaviour
 	{
 		if (!Navigator.Instance) return;
 		navigatorColliders.Remove(this);
-		foreach(var waypoint in InsideWaypoints)
-		{
-			if (!waypoint) continue;
-			waypoint.gameObject.SetActive(true);
-			Navigator.Instance.QueueNeighbourUpdate(waypoint);
-		}
-
 	}
-
-	public List<Waypoint> InsideWaypoints = new List<Waypoint>();
 
 	bool forceUpdate;
 
@@ -55,42 +46,40 @@ public class DynamicNavigationCollider : MonoBehaviour
 		forceUpdate = true;
 	}
 
+	public List<Waypoint> disabledWaypoints = new List<Waypoint>();
 	void UpdateCollider()
 	{
 		if (position != transform.position || forceUpdate)
 		{
+			for (int i = 0; i < disabledWaypoints.Count; ++i)
+			{
+				var waypoint = disabledWaypoints[i];
+				if ((waypoint.position - col.ClosestPoint(waypoint.position)).magnitude > waypoint.radius)
+				{
+					waypoint.gameObject.SetActive(true);
+				}	
+			}
+			disabledWaypoints.RemoveAll( w => {return w.gameObject.activeSelf;});
+
 			position = transform.position;
 			int count = 0;
 
 			var colliders = Navigator.Instance.colliders;
-
 			count = Physics.OverlapSphereNonAlloc(position, InfluenceRange, colliders, Navigator.Instance.WaypointLayer);
 
 			for (int i = 0; i < count; ++ i)
 			{
 				var waypoint = colliders[i].GetComponent<Waypoint>();
-				if (waypoint && waypoint.enabled && !InsideWaypoints.Contains(waypoint))
+				if (waypoint)
 				{
-					InsideWaypoints.Add(waypoint);
+					if ((waypoint.position - col.ClosestPoint(waypoint.position)).magnitude < waypoint.radius)
+					{
+						disabledWaypoints.Add(waypoint);
+						waypoint.gameObject.SetActive(false);
+					}
+					else Navigator.Instance.QueueNeighbourUpdate(waypoint);
 				}
 			}
-
-			foreach(var waypoint in InsideWaypoints)
-			{
-				var direction = position - waypoint.position;
-				RaycastHit info;
-				if (Physics.Raycast(waypoint.position, direction, out info, direction.magnitude , Navigator.Instance.NavigationCollisionLayer) && info.distance > waypoint.radius)
-				{
-					waypoint.gameObject.SetActive(true);
-					Navigator.Instance.QueueNeighbourUpdate(waypoint);
-				}
-				else
-				{
-					waypoint.gameObject.SetActive(false);
-				}
-			}
-
-			InsideWaypoints.RemoveAll(  w => {return w.gameObject.activeSelf;});
 			forceUpdate = false;
 		}
 	}

@@ -73,10 +73,8 @@ public class Navigator : MonoBehaviour
 	public float maxRadiusCheck = 1f;
 	[Tooltip("Layer which to check for Waypoints")]
 	public LayerMask WaypointLayer;
-	[Tooltip("Layers that can block waypoint paths")]
-	public LayerMask CollisionLayer;
 	[Tooltip("Layers which can block path finding")]
-	public LayerMask NavigationCollisionLayer;
+	public LayerMask NavigationCollisionLayers;
 
 	[Header("Gizmo Controls")]
 	[Tooltip("Show pathing Gizmos")]
@@ -176,12 +174,12 @@ public class Navigator : MonoBehaviour
 
 			if (useSphereCast)
 			{
-				if (!Physics.SphereCast(new Ray(waypoint.position, direction), waypoint.radius, distance, CollisionLayer |= NavigationCollisionLayer))
+				if (!Physics.SphereCast(new Ray(waypoint.position, direction), waypoint.radius, distance, NavigationCollisionLayers))
 				{
 					waypoint.neighbours.Add(GetNeighbourContainer(neighbourWaypoint, distance));
 				}
 			}
-			else if (!Physics.Raycast(waypoint.position, direction, distance, CollisionLayer |= NavigationCollisionLayer))
+			else if (!Physics.Raycast(waypoint.position, direction, distance, NavigationCollisionLayers))
 			{
 				waypoint.neighbours.Add(GetNeighbourContainer(neighbourWaypoint, distance));
 			}
@@ -215,12 +213,12 @@ public class Navigator : MonoBehaviour
 
 			if (useSphereCast)
 			{
-				if (!Physics.SphereCast(new Ray(waypoint.position, direction), waypoint.radius, distance, CollisionLayer |= NavigationCollisionLayer))
+				if (!Physics.SphereCast(new Ray(waypoint.position, direction), waypoint.radius, distance, NavigationCollisionLayers))
 				{
 					waypoint.neighbours.Add(GetNeighbourContainer(neighbourWaypoint, distance));
 				}
 			}
-			else if (!Physics.Raycast(waypoint.transform.position, direction, distance, CollisionLayer |= NavigationCollisionLayer))
+			else if (!Physics.Raycast(waypoint.transform.position, direction, distance, NavigationCollisionLayers))
 			{
 				waypoint.neighbours.Add(GetNeighbourContainer(neighbourWaypoint, distance));
 			}
@@ -382,11 +380,6 @@ public class Navigator : MonoBehaviour
 			if (closestNode.distToTarget > currentNode.distToTarget)
 			{
 				closestNode = currentNode;
-
-				if (closestNode.distTravelled > info.MaxPathingDistance)
-				{
-					break;
-				}
 			}
 
 			vistedNodes.Add(currentNode); 
@@ -525,12 +518,12 @@ public class Navigator : MonoBehaviour
 
 			if (useSphereCast)
 			{
-				if (!Physics.SphereCast(new Ray(waypoint.transform.position, direction), waypoint.radius, distance, CollisionLayer |= NavigationCollisionLayer))
+				if (!Physics.SphereCast(new Ray(waypoint.transform.position, direction), waypoint.radius, distance, NavigationCollisionLayers))
 				{
 					waypoint.neighbours.Add(new NeighbourInfo(neighbourWaypoint, distance));
 				}
 			}
-			else if (!Physics.Raycast(waypoint.transform.position, direction, distance, CollisionLayer |= NavigationCollisionLayer))
+			else if (!Physics.Raycast(waypoint.transform.position, direction, distance, NavigationCollisionLayers))
 			{
 				waypoint.neighbours.Add(new NeighbourInfo(neighbourWaypoint, distance));
 			}
@@ -570,7 +563,6 @@ public class NavigatorInfo
 	public Vector3 goalPosition = Vector3.zero;
 
 	public float minDistanceToWaypoint = .1f;
-	public float MaxPathingDistance = 20f;
 	[SerializeField]
 	public List<Vector3> Path = new List<Vector3>();
 	public int NodeTraversalCount;
