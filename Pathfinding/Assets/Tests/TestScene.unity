@@ -170,6 +170,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -245,6 +246,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -328,6 +330,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -505,6 +508,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -514,13 +518,15 @@ MonoBehaviour:
     distanceToNeighbour: 5.0200005
   - neighbourWaypoint: {fileID: 585201447}
     distanceToNeighbour: 6
-  - neighbourWaypoint: {fileID: 1065045232}
-    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 873871642}
+    distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 287655925}
     distanceToNeighbour: 7.81025
-  - neighbourWaypoint: {fileID: 447167089}
-    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1065045232}
+    distanceToNeighbour: 7.81025
   - neighbourWaypoint: {fileID: 846776291}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 447167089}
     distanceToNeighbour: 7.8230686
   - neighbourWaypoint: {fileID: 155552611}
     distanceToNeighbour: 9.9800005
@@ -586,6 +592,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -667,14 +674,15 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 369042155}
     distanceToNeighbour: 4.9800005
-  - neighbourWaypoint: {fileID: 31780545}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 31780545}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1505385035}
     distanceToNeighbour: 5.9999995
@@ -748,6 +756,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -760,7 +769,7 @@ MonoBehaviour:
   - neighbourWaypoint: {fileID: 1805460922}
     distanceToNeighbour: 7.05694
   - neighbourWaypoint: {fileID: 1893488504}
-    distanceToNeighbour: 7.797462
+    distanceToNeighbour: 7.7820826
   position: {x: -16.7, y: 0.73, z: 7.7700005}
   ShowPathRange: 0
 --- !u!1 &142379644
@@ -823,6 +832,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -841,7 +851,7 @@ MonoBehaviour:
   - neighbourWaypoint: {fileID: 7217356}
     distanceToNeighbour: 7.8102503
   - neighbourWaypoint: {fileID: 1893488504}
-    distanceToNeighbour: 7.8230686
+    distanceToNeighbour: 7.946446
   - neighbourWaypoint: {fileID: 136634282}
     distanceToNeighbour: 10
   position: {x: -6.700001, y: 0.73, z: 7.7700005}
@@ -976,14 +986,15 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 882391087}
     distanceToNeighbour: 4.9800005
-  - neighbourWaypoint: {fileID: 1472172629}
-    distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 1707154773}
+    distanceToNeighbour: 6
+  - neighbourWaypoint: {fileID: 1472172629}
     distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 1065045232}
     distanceToNeighbour: 7.7974615
@@ -1053,12 +1064,13 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
-  - neighbourWaypoint: {fileID: 1251268861}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1251268861}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1977834260}
     distanceToNeighbour: 5.0200005
@@ -1177,6 +1189,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -1250,6 +1263,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -1407,6 +1421,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -1417,7 +1432,7 @@ MonoBehaviour:
   - neighbourWaypoint: {fileID: 1288375689}
     distanceToNeighbour: 5.0199995
   - neighbourWaypoint: {fileID: 1893488504}
-    distanceToNeighbour: 5.9999995
+    distanceToNeighbour: 6.0199995
   - neighbourWaypoint: {fileID: 407966001}
     distanceToNeighbour: 7.05694
   - neighbourWaypoint: {fileID: 348978742}
@@ -1486,6 +1501,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -1561,14 +1577,15 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 811386578}
     distanceToNeighbour: 4.9800005
-  - neighbourWaypoint: {fileID: 566207919}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 165528744}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 566207919}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1003332376}
     distanceToNeighbour: 6
@@ -1642,11 +1659,12 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 1893488504}
-    distanceToNeighbour: 4.9800005
+    distanceToNeighbour: 4.9800406
   - neighbourWaypoint: {fileID: 598067495}
     distanceToNeighbour: 5.9999995
   - neighbourWaypoint: {fileID: 136634282}
@@ -1719,6 +1737,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -1796,6 +1815,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -1873,6 +1893,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -1948,6 +1969,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2025,11 +2047,14 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 1558329723}
     distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 873871642}
+    distanceToNeighbour: 5.0200005
   - neighbourWaypoint: {fileID: 1811222518}
     distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 771439721}
@@ -2100,6 +2125,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2257,6 +2283,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2334,14 +2361,15 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 1173410227}
     distanceToNeighbour: 4.9800005
-  - neighbourWaypoint: {fileID: 1251268861}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 314358562}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1251268861}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 610594320}
     distanceToNeighbour: 6
@@ -2415,6 +2443,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2492,6 +2521,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2500,7 +2530,7 @@ MonoBehaviour:
   - neighbourWaypoint: {fileID: 1805460922}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1893488504}
-    distanceToNeighbour: 6.0000005
+    distanceToNeighbour: 5.9800005
   - neighbourWaypoint: {fileID: 418146287}
     distanceToNeighbour: 7.05694
   - neighbourWaypoint: {fileID: 348978742}
@@ -2567,6 +2597,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2644,6 +2675,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2719,6 +2751,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2731,7 +2764,7 @@ MonoBehaviour:
   - neighbourWaypoint: {fileID: 1519540985}
     distanceToNeighbour: 7.05694
   - neighbourWaypoint: {fileID: 1893488504}
-    distanceToNeighbour: 7.797461
+    distanceToNeighbour: 7.812861
   - neighbourWaypoint: {fileID: 1288375689}
     distanceToNeighbour: 10
   position: {x: -16.7, y: 0.73, z: -4.2299995}
@@ -2796,6 +2829,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2803,13 +2837,13 @@ MonoBehaviour:
     distanceToNeighbour: 4.9800005
   - neighbourWaypoint: {fileID: 1766064015}
     distanceToNeighbour: 5
-  - neighbourWaypoint: {fileID: 1919362210}
-    distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 566207919}
     distanceToNeighbour: 6
-  - neighbourWaypoint: {fileID: 1136914148}
-    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 1173410227}
+    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1136914148}
     distanceToNeighbour: 7.7974615
   - neighbourWaypoint: {fileID: 1251268861}
     distanceToNeighbour: 7.81025
@@ -2877,6 +2911,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -2952,6 +2987,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3121,14 +3157,15 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 1977834260}
     distanceToNeighbour: 4.9800005
-  - neighbourWaypoint: {fileID: 91104926}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 91104926}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 231170460}
     distanceToNeighbour: 6
@@ -3202,6 +3239,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3283,6 +3321,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3360,6 +3399,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3433,6 +3473,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3606,6 +3647,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3683,6 +3725,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3758,6 +3801,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3835,6 +3879,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -3842,15 +3887,17 @@ MonoBehaviour:
     distanceToNeighbour: 4.9800005
   - neighbourWaypoint: {fileID: 81198299}
     distanceToNeighbour: 5
-  - neighbourWaypoint: {fileID: 1065045232}
-    distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 287655925}
     distanceToNeighbour: 6
-  - neighbourWaypoint: {fileID: 1472172629}
-    distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1065045232}
+    distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 1707154773}
     distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 1472172629}
+    distanceToNeighbour: 7.7974615
   - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 873871642}
     distanceToNeighbour: 7.81025
   position: {x: 13.3, y: 0.73, z: 18.77}
   ShowPathRange: 0
@@ -4003,12 +4050,13 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
-  - neighbourWaypoint: {fileID: 142379647}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 142379647}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 7217356}
     distanceToNeighbour: 6.0000005
@@ -4082,6 +4130,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -4157,6 +4206,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -4352,11 +4402,14 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 1472172629}
     distanceToNeighbour: 4.9800005
+  - neighbourWaypoint: {fileID: 873871642}
+    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 882391087}
     distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 155552611}
@@ -4603,6 +4656,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -4680,6 +4734,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -4755,6 +4810,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -4830,6 +4886,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -4989,6 +5046,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -5068,6 +5126,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -5143,6 +5202,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -5224,12 +5284,13 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
-  - neighbourWaypoint: {fileID: 91104926}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1631175440}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 91104926}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1608534963}
     distanceToNeighbour: 6
@@ -5301,6 +5362,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -5505,6 +5567,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -5518,9 +5581,9 @@ MonoBehaviour:
     distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 91104926}
     distanceToNeighbour: 7.7974615
-  - neighbourWaypoint: {fileID: 1251268861}
-    distanceToNeighbour: 7.8230686
   - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1251268861}
     distanceToNeighbour: 7.8230686
   - neighbourWaypoint: {fileID: 1608534963}
     distanceToNeighbour: 9.9800005
@@ -5586,6 +5649,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -5598,7 +5662,7 @@ MonoBehaviour:
   - neighbourWaypoint: {fileID: 7217356}
     distanceToNeighbour: 7.8102493
   - neighbourWaypoint: {fileID: 1893488504}
-    distanceToNeighbour: 7.8230677
+    distanceToNeighbour: 7.8384175
   - neighbourWaypoint: {fileID: 1216494297}
     distanceToNeighbour: 9.9800005
   - neighbourWaypoint: {fileID: 598067495}
@@ -5665,6 +5729,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -5808,6 +5873,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -5815,13 +5881,13 @@ MonoBehaviour:
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1447024800}
     distanceToNeighbour: 5.0199995
-  - neighbourWaypoint: {fileID: 1194123235}
-    distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 1636055234}
     distanceToNeighbour: 6
-  - neighbourWaypoint: {fileID: 1558329723}
-    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1194123235}
+    distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 1570409566}
+    distanceToNeighbour: 7.81025
+  - neighbourWaypoint: {fileID: 1558329723}
     distanceToNeighbour: 7.81025
   - neighbourWaypoint: {fileID: 1805460922}
     distanceToNeighbour: 7.823068
@@ -5893,13 +5959,15 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints:
+  - {fileID: 0}
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 7217356}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1893488504}
-    distanceToNeighbour: 5.0199995
+    distanceToNeighbour: 5.020039
   - neighbourWaypoint: {fileID: 1288375689}
     distanceToNeighbour: 5.9999995
   - neighbourWaypoint: {fileID: 1950386727}
@@ -6088,6 +6156,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6103,9 +6172,9 @@ MonoBehaviour:
     distanceToNeighbour: 7.7974615
   - neighbourWaypoint: {fileID: 418146287}
     distanceToNeighbour: 7.7974615
-  - neighbourWaypoint: {fileID: 1194123235}
-    distanceToNeighbour: 7.823068
   - neighbourWaypoint: {fileID: 1636055234}
+    distanceToNeighbour: 7.823068
+  - neighbourWaypoint: {fileID: 1194123235}
     distanceToNeighbour: 7.823068
   position: {x: -11.72, y: 0.73, z: 18.77}
   ShowPathRange: 0
@@ -6169,6 +6238,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6242,6 +6312,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6251,6 +6322,8 @@ MonoBehaviour:
     distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 882391087}
     distanceToNeighbour: 7.7974615
+  - neighbourWaypoint: {fileID: 873871642}
+    distanceToNeighbour: 9.9800005
   position: {x: 18.28, y: 0.73, z: 24.77}
   ShowPathRange: 0
 --- !u!1 &1505385032
@@ -6313,6 +6386,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6388,6 +6462,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6463,6 +6538,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6538,6 +6614,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6613,6 +6690,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6784,6 +6862,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -6861,12 +6940,13 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
-  - neighbourWaypoint: {fileID: 741702689}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1240073354}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 741702689}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 865916864}
     distanceToNeighbour: 5.0199995
@@ -6944,6 +7024,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7023,12 +7104,13 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
-  - neighbourWaypoint: {fileID: 1939004871}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1288375689}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1939004871}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1519540985}
     distanceToNeighbour: 5.0199995
@@ -7108,6 +7190,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7187,6 +7270,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7260,6 +7344,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7333,6 +7418,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7406,6 +7492,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7489,6 +7576,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7500,13 +7588,13 @@ MonoBehaviour:
     distanceToNeighbour: 6
   - neighbourWaypoint: {fileID: 1727788587}
     distanceToNeighbour: 6
-  - neighbourWaypoint: {fileID: 1919362210}
-    distanceToNeighbour: 7.81025
   - neighbourWaypoint: {fileID: 566207919}
     distanceToNeighbour: 7.81025
-  - neighbourWaypoint: {fileID: 668387057}
-    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 1919362210}
+    distanceToNeighbour: 7.81025
   - neighbourWaypoint: {fileID: 17777098}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 668387057}
     distanceToNeighbour: 7.8230686
   - neighbourWaypoint: {fileID: 545907146}
     distanceToNeighbour: 9.9800005
@@ -7654,6 +7742,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7733,6 +7822,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7749,6 +7839,8 @@ MonoBehaviour:
   - neighbourWaypoint: {fileID: 1570409566}
     distanceToNeighbour: 7.7974615
   - neighbourWaypoint: {fileID: 585201447}
+    distanceToNeighbour: 7.8230686
+  - neighbourWaypoint: {fileID: 873871642}
     distanceToNeighbour: 7.8230686
   - neighbourWaypoint: {fileID: 1402949057}
     distanceToNeighbour: 9.9800005
@@ -7814,6 +7906,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7887,6 +7980,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -7930,7 +8024,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1893488501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.72, y: 0, z: 1.77}
+  m_LocalPosition: {x: -11.72, y: 0, z: 1.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1445823353}
@@ -7964,24 +8058,25 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 348978742}
-    distanceToNeighbour: 4.9800005
+    distanceToNeighbour: 4.9800406
   - neighbourWaypoint: {fileID: 1427961511}
-    distanceToNeighbour: 5.0199995
-  - neighbourWaypoint: {fileID: 266751785}
-    distanceToNeighbour: 5.9999995
+    distanceToNeighbour: 5.020039
   - neighbourWaypoint: {fileID: 588287692}
-    distanceToNeighbour: 6.0000005
-  - neighbourWaypoint: {fileID: 598067495}
-    distanceToNeighbour: 7.797461
+    distanceToNeighbour: 5.9800005
+  - neighbourWaypoint: {fileID: 266751785}
+    distanceToNeighbour: 6.0199995
   - neighbourWaypoint: {fileID: 136634282}
-    distanceToNeighbour: 7.797462
+    distanceToNeighbour: 7.7820826
+  - neighbourWaypoint: {fileID: 598067495}
+    distanceToNeighbour: 7.812861
   - neighbourWaypoint: {fileID: 1288375689}
-    distanceToNeighbour: 7.8230677
-  position: {x: -11.72, y: 0.73, z: 1.77}
+    distanceToNeighbour: 7.8384175
+  position: {x: -11.72, y: 0.73, z: 1.79}
   ShowPathRange: 0
 --- !u!1 &1919362207
 GameObject:
@@ -8043,14 +8138,15 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 1136914148}
     distanceToNeighbour: 4.9800005
-  - neighbourWaypoint: {fileID: 91491730}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1727788587}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 91491730}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 610594320}
     distanceToNeighbour: 6
@@ -8210,14 +8306,15 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
   - neighbourWaypoint: {fileID: 668387057}
     distanceToNeighbour: 4.9800005
-  - neighbourWaypoint: {fileID: 1950386727}
-    distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1665506123}
+    distanceToNeighbour: 5
+  - neighbourWaypoint: {fileID: 1950386727}
     distanceToNeighbour: 5
   - neighbourWaypoint: {fileID: 1173333836}
     distanceToNeighbour: 6
@@ -8319,6 +8416,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -8394,6 +8492,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -8667,6 +8766,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:
@@ -8744,6 +8844,7 @@ MonoBehaviour:
   _dynamicWaypoint: 0
   _maxPath: 10
   _radius: 1
+  IgnoreWaypoints: []
   penalty: 0
   type: 0
   neighbours:

@@ -164,7 +164,7 @@ public class Navigator : MonoBehaviour
 		for(int i = 0; i < count; ++ i)// ( var collider in colliders)
 		{
 			var neighbourWaypoint = colliders[i].GetComponent<Waypoint>();
-			if (neighbourWaypoint == null || neighbourWaypoint == waypoint) continue;
+			if (neighbourWaypoint == null || neighbourWaypoint == waypoint || waypoint.IgnoreWaypoints.Contains(neighbourWaypoint)) continue;
 
 			QueueNeighbourUpdate(neighbourWaypoint);
 
@@ -204,7 +204,7 @@ public class Navigator : MonoBehaviour
 		for (int i = 0; i < count; ++ i)
 		{
 			var neighbourWaypoint = colliders[i].GetComponent<Waypoint>();
-			if (neighbourWaypoint == null || neighbourWaypoint == waypoint) continue;
+			if (neighbourWaypoint == null || neighbourWaypoint == waypoint || waypoint.IgnoreWaypoints.Contains(neighbourWaypoint)) continue;
 
 			var direction = neighbourWaypoint.position - waypoint.position;
 			var distance = direction.magnitude;
@@ -510,7 +510,7 @@ public class Navigator : MonoBehaviour
 		for (int i = 0; i < count; ++ i)
 		{
 			var neighbourWaypoint = colliders[i].GetComponent<Waypoint>();
-			if (neighbourWaypoint == null || neighbourWaypoint == waypoint) continue;
+			if (neighbourWaypoint == null || neighbourWaypoint == waypoint || waypoint.IgnoreWaypoints.Contains(neighbourWaypoint)) continue;
 
 			var direction = neighbourWaypoint.transform.position - waypoint.transform.position;
 			var distance = direction.magnitude;

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
+using System.Linq;
 #endif
 
 public class Waypoint : MonoBehaviour 
@@ -75,6 +76,9 @@ public class Waypoint : MonoBehaviour
 			_radius = value;
 		}
 	}
+
+	[Tooltip("List of Waypoints this Waypoint can not path to")]
+	public List<Waypoint> IgnoreWaypoints;
 
 	/// <summary>
 	/// Increasing this value makes the node less desirable to traverse
@@ -335,10 +339,6 @@ public class WaypointInspector : Editor
 
 	public override void OnInspectorGUI ()
 	{
-		bool test = waypoint.dynamicWaypoint;
-
-		EditorGUI.BeginChangeCheck();
-
 		if (!Application.isPlaying)
 		{
 			if (targets.Length == 1 && GUILayout.Button("Update Waypoint Preview"))
@@ -359,27 +359,72 @@ public class WaypointInspector : Editor
 				Navigator.Instance.PreviewAllPaths();
 			}
 		}
-			
-		waypoint.dynamicWaypoint = EditorGUILayout.Toggle(new GUIContent("Dynamic Waypoint", "Marks waypoint as dynamic, automatically updates when it's position is moved"), waypoint.dynamicWaypoint);
-		waypoint.type = (WaypointType)EditorGUILayout.EnumPopup(new GUIContent("Type", "Type of Waypoint, used for querying nodes during callback functions"), waypoint.type);
-		waypoint.maxPath = EditorGUILayout.Slider(new GUIContent("Max Path", "Maximum distance this waypoint can connect others"), waypoint.maxPath, 0f, Navigator.Instance.maxPathLength);
-		waypoint.penalty = EditorGUILayout.Slider(new GUIContent ("Penalty", "Penalty to path finding when traversing this node"), waypoint.penalty, 0f, 10f);
 
+		EditorGUI.BeginChangeCheck();
+
+		bool UpdateDynamicCheck;
+		EditorGUI.BeginChangeCheck();
+		waypoint.dynamicWaypoint = EditorGUILayout.Toggle(new GUIContent("Dynamic Waypoint", "Marks waypoint as dynamic, automatically updates when it's position is moved"), waypoint.dynamicWaypoint);
+		UpdateDynamicCheck = EditorGUI.EndChangeCheck();
+			
+		bool TypeCheck;
+		EditorGUI.BeginChangeCheck();
+		waypoint.type = (WaypointType)EditorGUILayout.EnumPopup(new GUIContent("Type", "Type of Waypoint, used for querying nodes during callback functions"), waypoint.type);
+		TypeCheck = EditorGUI.EndChangeCheck();
+
+		bool MaxPathCheck;
+		EditorGUI.BeginChangeCheck();
+		waypoint.maxPath = EditorGUILayout.Slider(new GUIContent("Max Path", "Maximum distance this waypoint can connect others"), waypoint.maxPath, 0f, Navigator.Instance.maxPathLength);
+		MaxPathCheck = EditorGUI.EndChangeCheck();
+
+		bool PenaltyCheck;
+		EditorGUI.BeginChangeCheck();
+		waypoint.penalty = EditorGUILayout.Slider(new GUIContent ("Penalty", "Penalty to path finding when traversing this node"), waypoint.penalty, 0f, 10f);
+		PenaltyCheck = EditorGUI.EndChangeCheck();
+
+		bool RadiusCheck;
+		EditorGUI.BeginChangeCheck();
 		if (Navigator.Instance.useSphereCast)
 			waypoint.radius = EditorGUILayout.Slider(new GUIContent("RadiusSize", "Radius of spherecast when checking valid paths and how close Navigation Colliders can get before disabling Waypoint"), waypoint.radius, .1f, Navigator.Instance.maxRadiusCheck);
+		RadiusCheck = EditorGUI.EndChangeCheck();
 
+		bool ShowPathCheck;
+		EditorGUI.BeginChangeCheck();
 		waypoint.ShowPathRange = EditorGUILayout.Toggle(new GUIContent("Show Path Range", "Shows range which the waypoint can detect and connect to other waypoints"), waypoint.ShowPathRange);
+		ShowPathCheck = EditorGUI.EndChangeCheck();
+
+		bool IgnoreWaypointCheck;
+		EditorGUI.BeginChangeCheck();
+		serializedObject.Update();
+		EditorGUILayout.PropertyField(serializedObject.FindProperty("IgnoreWaypoints"), true);
+		serializedObject.ApplyModifiedProperties();
+		IgnoreWaypointCheck = EditorGUI.EndChangeCheck();
+
+		if (IgnoreWaypointCheck)
+		{
+			waypoint.IgnoreWaypoints = waypoint.IgnoreWaypoints.Distinct().ToList();
+		}
 
 		if (EditorGUI.EndChangeCheck())
 		{
 			foreach(var item in targets)
 			{
 				var otherTargets = (Waypoint)item;
-				otherTargets.maxPath = waypoint.maxPath;
-				otherTargets.dynamicWaypoint = waypoint.dynamicWaypoint;
-				otherTargets.radius = waypoint.radius;
-				otherTargets.penalty = waypoint.penalty;
-				otherTargets.ShowPathRange = waypoint.ShowPathRange;
+
+				if (UpdateDynamicCheck)
+					otherTargets.dynamicWaypoint = waypoint.dynamicWaypoint;
+				if (TypeCheck)
+					otherTargets.type = waypoint.type;
+				if (MaxPathCheck)
+					otherTargets.maxPath = waypoint.maxPath;
+				if (PenaltyCheck)
+					otherTargets.penalty = waypoint.penalty;
+				if (RadiusCheck)
+					otherTargets.radius = waypoint.radius;
+				if (ShowPathCheck)
+					otherTargets.ShowPathRange = waypoint.ShowPathRange;
+				if (IgnoreWaypointCheck)
+					otherTargets.IgnoreWaypoints = waypoint.IgnoreWaypoints;
 			}
 		}
 
