@@ -409,6 +409,8 @@ public class WaypointInspector : Editor
 		{
 			foreach(var item in targets)
 			{
+				EditorUtility.SetDirty(target);
+
 				var otherTargets = (Waypoint)item;
 
 				if (UpdateDynamicCheck)
