@@ -10,6 +10,3 @@ I wanted a little bit more flexibility than what Unity's Nav Mesh provided so I 
 - Navigation colliders that automatically update waypoints and paths around them
 - Utilizes A*
 - Zero GC allocations 
-
-## Wiki
-Check out the [wiki](https://github.com/PeteyChan/DynamicWaypoints/wiki) for more information.
