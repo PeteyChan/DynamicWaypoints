@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c21721cb7e6e044998e365af5d0a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxWaypointUpdatesPerFrame: 10
+  MaxWaypointUpdatesPerFrame: 20
   MaxPathingUpdatesPerFrame: 20
   maxPathLength: 10
   maxNodeTraversal: 50
